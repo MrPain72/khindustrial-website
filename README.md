@@ -37,3 +37,15 @@ Tietosuojaselosteen URL:
 
 Sovellussivu:
 `https://khindustrial.com/kh-disc-golf/`
+
+## KH Disc Golf -versiohistorian päivittäminen
+
+Kun uusi release on hyväksytty Samsungilla, commitoitu, versionostettu ja tagattu:
+
+1. Luo tarkistettava luonnos komennolla `./scripts/update-disc-golf-release.ps1 -Tag v0.5.4`.
+2. Varmista käyttäjälle näkyvät muutokset mobiilirepon Git-diffistä ja dokumentaatiosta.
+3. Lisää tarkistettu julkaisu tiedoston `assets/disc-golf-releases.js` tietolähteeseen ja siirrä `current`-merkintä uusimpaan versioon.
+4. Tarkista sivu desktopissa ja noin 412 px leveässä mobiilinäkymässä.
+5. Tee website-commit ja push vasta sisällön hyväksynnän jälkeen.
+
+Skripti ei julkaise tai kirjoita markkinointitekstiä automaattisesti, vaan tuottaa käsin tarkistettavan luonnoksen.

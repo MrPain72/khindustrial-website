@@ -21,10 +21,32 @@
     .closing{text-align:center}
     .closing h2{max-width:900px;margin-right:auto;margin-left:auto}
     .closing p{margin-right:auto;margin-left:auto}
+    .release-list{display:grid;gap:20px;margin-top:30px}
+    .release-card{padding:28px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(16,31,51,.96),rgba(12,25,42,.9))}
+    .release-card.current{border-color:var(--accent);box-shadow:0 0 0 1px rgba(255,138,31,.12)}
+    .release-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:16px}
+    .release-heading h3{margin:0;font-size:1.45rem}.release-meta{color:var(--muted);font-size:.94rem}
+    .release-status{padding:5px 9px;border:1px solid #694420;border-radius:999px;color:var(--accent-soft);background:rgba(255,138,31,.1);font-size:.82rem;font-weight:700}
+    .release-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:20px}.release-columns h4{margin:0 0 8px;color:var(--accent-soft)}.release-columns ul{margin:0;padding-left:20px;color:var(--muted)}
+    .course-guide{margin-top:34px;padding:28px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)}.course-guide ol{padding-left:22px;color:var(--muted)}.course-guide h3,.course-guide h4{margin-top:24px}
+    .release-list{display:grid;gap:20px;margin-top:30px}
+    .release-card{padding:28px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(16,31,51,.96),rgba(12,25,42,.9))}
+    .release-card.current{border-color:var(--accent);box-shadow:0 0 0 1px rgba(255,138,31,.12)}
+    .release-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:16px}
+    .release-heading h3{margin:0;font-size:1.45rem}
+    .release-meta{color:var(--muted);font-size:.94rem}
+    .release-status{padding:5px 9px;border:1px solid #694420;border-radius:999px;color:var(--accent-soft);background:rgba(255,138,31,.1);font-size:.82rem;font-weight:700}
+    .release-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:20px}
+    .release-columns h4{margin:0 0 8px;color:var(--accent-soft)}
+    .release-columns ul{margin:0;padding-left:20px;color:var(--muted)}
+    .course-guide{margin-top:34px;padding:28px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)}
+    .course-guide ol,.course-guide ul{padding-left:22px;color:var(--muted)}
+    .course-guide h3,.course-guide h4{margin-top:24px}
     @media(max-width:800px){
       .hero-points{display:grid;grid-template-columns:1fr}
       .hero-points li{border-radius:12px}
       .callout{padding:18px}
+      .release-card,.course-guide{padding:20px}.release-columns{grid-template-columns:1fr}
     }
   </style>
 </head>
@@ -53,6 +75,34 @@
         <li>Ratakartta helposti mukaan</li>
       </ul>
       <p class="hero-copy">Lisää pelaajat, valitse rata ja aloita kierros. Jokainen pelaaja ei tarvitse omaa sovellusta tai käyttäjätiliä.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="eyebrow">Ajankohtaista</div>
+      <h2>Päivitykset ja versiohistoria</h2>
+      <p class="section-copy">Katso nopeasti, mitä sisäiseen testaukseen julkaistuissa versioissa on tullut uutena ja mitä on parannettu. Uusin versio näytetään aina ensimmäisenä.</p>
+      <div id="disc-golf-release-history" class="release-list" aria-live="polite"></div>
+      <article class="course-guide">
+        <div class="kicker">Omat radat</div>
+        <h3>Näin luot oman radan ja lisäät ratakartan</h3>
+        <p>Avaa <strong>Ratakirjasto</strong> ja aloita uuden oman radan luominen. Radalle voi määrittää nimen, väylien määrän, Par-arvot ja väylien pituudet.</p>
+        <h4>Ratakartan lisääminen</h4>
+        <ol>
+          <li><strong>Ota kuva radan aluekartasta.</strong> Monilla radoilla aluekartta löytyy ensimmäisen väylän tai infotaulun yhteydestä. Ota kartasta kuva puhelimella ja lisää se radan tietoihin.</li>
+          <li><strong>Lataa virallinen ratakartta.</strong> Jos radan virallisella verkkosivulla on karttakuva, tallenna se puhelimeen ja lisää se sovelluksen <strong>Lisää kartta</strong> -toiminnolla.</li>
+        </ol>
+        <h4>Oman radan muokkaaminen</h4>
+        <ol>
+          <li>Avaa <strong>Ratakirjasto</strong>.</li>
+          <li>Napauta oman radan kartta-aluetta.</li>
+          <li>Avaa oikean yläkulman kolmen pisteen ⋮-valikko.</li>
+          <li>Valitse radan muokkaus tai karttakuvan vaihto.</li>
+        </ol>
+        <p>Tätä kautta voit muuttaa radan nimeä, väylien määrää, Par-arvoja, väylien pituuksia ja ratakarttaa.</p>
+        <div class="note"><strong>Huomio:</strong> Oman radan muokkauksen löydettävyyttä parannetaan seuraavassa päivityksessä.</div>
+      </article>
     </div>
   </section>
 
@@ -181,6 +231,7 @@
     <div class="small">© <span data-year>2026</span> KH INDUSTRIAL</div>
   </div>
 </footer>
+<script src="/assets/disc-golf-releases.js"></script>
 <script src="/assets/app.js"></script>
 </body>
 </html>
