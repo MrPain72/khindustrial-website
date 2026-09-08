@@ -28,7 +28,7 @@ $($files|ForEach-Object{"- $_"}|Out-String)
 ## Tarkistus
 - [ ] Sisältö varmennettu Git-diffistä ja dokumentaatiosta.
 - [ ] Teksti tarkistettu käsin.
-- [ ] Uusi versio lisätty assets/disc-golf-releases.js-tiedostoon ja current-merkintä siirretty.
+- [ ] Uusi versio lisätty assets/disc-golf-versions.js-tiedostoon ja current-merkintä siirretty.
 - [ ] Desktop- ja mobiilinäkymä tarkistettu.
 "@
 Set-Content -LiteralPath $OutputPath -Value $draft -Encoding utf8
