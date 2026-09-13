@@ -122,6 +122,16 @@ h3{font-size:1.25rem;margin-bottom:10px}
 .course-guide{margin-top:34px;padding:28px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)}
 .course-guide ol{padding-left:22px;color:var(--muted)}
 .course-guide h2,.course-guide h3{margin-top:24px}
+.upcoming-release{background:linear-gradient(180deg,rgba(255,138,31,.055),rgba(7,17,31,0))}
+.upcoming-release>.wrap>.status{margin-bottom:18px}
+.upcoming-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:34px}
+.upcoming-card.featured:first-child{grid-column:span 2}
+.upcoming-card blockquote{margin:18px 0 0;padding:14px 16px;border-left:3px solid var(--accent);color:var(--text);background:rgba(255,138,31,.06);border-radius:0 10px 10px 0}
+.compact-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:18px}
+.tester-cta{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.6fr);gap:32px;margin-top:34px;padding:32px;border:1px solid var(--accent);border-radius:20px;background:linear-gradient(135deg,rgba(255,138,31,.13),rgba(16,31,51,.88))}
+.tester-cta h2{font-size:clamp(1.9rem,4vw,2.8rem)}
+.tester-cta p{color:var(--muted)}
+.tester-timing{padding:22px;border:1px solid var(--line);border-radius:16px;background:rgba(7,17,31,.55)}
 .progress-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:28px 0;padding:0;list-style:none}
 .progress-list li{position:relative;padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02)}
 .progress-list li:not(:last-child)::after{content:"→";position:absolute;right:-11px;top:50%;z-index:2;color:var(--accent-soft);transform:translateY(-50%)}
@@ -135,7 +145,9 @@ code{background:#101f33;padding:.15em .35em;border-radius:5px}
     border-radius:14px
   }
   .nav-links.open{display:flex}
-  .grid,.feature-list{grid-template-columns:1fr}
+  .grid,.feature-list,.upcoming-grid,.compact-feature-grid,.tester-cta{grid-template-columns:1fr}
+  .upcoming-card.featured:first-child{grid-column:auto}
+  .tester-cta{padding:22px}
   .release-card,.course-guide{padding:20px}
   .release-columns,.progress-list{grid-template-columns:1fr}
   .progress-list li:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-18px;transform:translateX(-50%)}
