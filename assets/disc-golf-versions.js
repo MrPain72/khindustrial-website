@@ -1,8 +1,23 @@
 window.KH_DISC_GOLF_RELEASES = [
-  { version: "0.5.3", date: "2026-09-08", status: "Nykyinen sisäinen testiversio", current: true,
+  { version: "0.6.0", date: "2026-09-17", status: "Suljettu testiversio", current: true,
+    summary: "Versio 0.6.0 tuo useita parannuksia kierroksen aloittamiseen, kiekkokassiin, ratakirjastoon ja sovelluksen yleiseen käytettävyyteen.",
+    newItems: [
+      "Selkeämpi kierroksen aloitus: kierroksen asetuksia on yksinkertaistettu, ja kierros käyttää suoraan radalle tallennettuja väylä- ja par-tietoja.",
+      "Suljetut väylät: kierrokselta voi jättää yksittäisiä väyliä pois esimerkiksi kilpailujen, kunnostuksen tai muun tilapäisen syyn vuoksi. Toimintoon lisättiin myös selkeämpi ohjeistus.",
+      "Pelaa uudelleen: aiemmin pelatun kierroksen voi käynnistää uudelleen samoilla asetuksilla.",
+      "Kiekkokassin haku ja suosikit helpottavat omien kiekkojen löytämistä.",
+      "Ratakirjastossa omat suosikkiradat löytyvät aiempaa nopeammin.",
+      "Sovelluksen oma FI/EN-kielivalinta mahdollistaa suomen tai englannin valitsemisen laitteen kielestä riippumatta.",
+      "Palaute / Ilmoita ongelmasta: toiminto löytyy Tietoja-näkymästä ja aktiivisen kierroksen ⋮-valikosta."
+    ],
+    improvedItems: [
+      "Kiekkokassin käytettävyyttä on parannettu.",
+      "Kierroksen asetusten latausta ja sovelluksen yleistä käyttövarmuutta on parannettu."
+    ] },
+  { version: "0.5.3", date: "2026-09-08", status: "Sisäinen testiversio",
     summary: "Flickin kaksinpeli ja yhteinen ennätystaulu ovat entistä selkeämpiä ja toimivat paremmin myös pitkillä pelaajanimillä.",
     newItems: ["Flickin yksin- ja kaksinpelillä on yksi yhteinen Record Board · TOP 6.", "Kaksinpelin kummankin pelaajan henkilökohtainen 8-väylän tulos voi päästä samalle TOP 6 -listalle.", "Uudelle TOP 6 -tulokselle tallennetaan pelaajakohtainen kolmen merkin tunnus."],
-    improvedItems: ["Kaksinpelin tulosnäkymää on selkeytetty ja yhteenvetorivi on tiivistetty muotoon Yht.", "Pitkät pelaajanimet, näytön turva-alueet ja pienempien näyttöjen asettelu toimivat paremmin."], testerItems: ["Versio on Google Playn sisäisessä testauksessa."] },
+    improvedItems: ["Kaksinpelin tulosnäkymää on selkeytetty ja yhteenvetorivi on tiivistetty muotoon Yht.", "Pitkät pelaajanimet, näytön turva-alueet ja pienempien näyttöjen asettelu toimivat paremmin."], testerItems: ["Versio julkaistiin Google Playn sisäiseen testaukseen."] },
   { version: "0.5.2", date: "2026-09-07", status: "Sisäinen testiversio",
     summary: "Kiekkokassi ja Lentoarvio laajensivat sovelluksen välinehallintaa, ja omia ratoja voi nyt muokata myös luomisen jälkeen.",
     newItems: ["Kiekkokassiin voi tallentaa kiekon nimen, valmistajan, muoviseoksen, värin, painon, kunnon, hankintatiedot sekä oman arvion ja mieltymyksen.", "Kiekolle voi lisätä lentoluvut Speed, Glide, Turn ja Fade sekä galleriasta valitun kuvan.", "Lentoarvio ja tarkempi arvio auttavat hahmottamaan kiekon ominaisuuksia paikallisesti ilman verkkopalvelua.", "Käyttäjän itse luoman radan tietoja ja ratakarttaa voi muokata jälkikäteen."],
