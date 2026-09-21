@@ -1,5 +1,19 @@
 window.KH_DISC_GOLF_RELEASES = [
-  { version: "0.6.0", date: "2026-09-17", status: "Suljettu testiversio", current: true,
+  { version: "0.6.1", date: "2026-09-21", status: "Suljettu testiversio", current: true,
+    summary: "Versio 0.6.1 on julkaistu Google Playn suljetun testauksen Alpha-kanavalle ja on valittujen testaajien käytettävissä.",
+    newItems: [
+      "Kiekkokassin suosikit: Kiekkokassin suosikkien käyttöä on selkeytetty. Kun kaikki kiekot ovat näkyvissä, painike näyttää \"Näytä suosikit\". Suosikkinäkymässä painike vaihtuu muotoon \"Näytä kaikki\".",
+      "Haku ja suosikit: Kiekkokassin haku toimii yhdessä suosikkisuodatuksen kanssa. Hakuteksti säilyy, vaikka näkymää vaihdetaan kaikkien kiekkojen ja suosikkien välillä.",
+      "Useita kuvia palautteeseen: Palautteeseen ja ongelmailmoitukseen voi liittää enintään viisi kuvaa. Valitut kuvat näkyvät esikatselussa, ja yksittäisen kuvan voi poistaa ennen sähköpostin lähettämistä."
+    ],
+    improvedItems: [
+      "Kuvien automaattinen optimointi: Palautteeseen liitettävien kuvien kokoa pienennetään automaattisesti ennen sähköpostiin liittämistä. Tämä vähentää liian suurten sähköpostiliitteiden riskiä. Käyttäjän alkuperäisiä kuvia ei muuteta.",
+      "Versio sisältää lisäksi pieniä käytettävyyden ja toimintavarmuuden parannuksia."
+    ],
+    testerItems: [
+      "Versio on valittujen Alpha-testaajien käytettävissä Google Playssa."
+    ] },
+  { version: "0.6.0", date: "2026-09-17", status: "Suljettu testiversio", current: false,
     summary: "Versio 0.6.0 tuo useita parannuksia kierroksen aloittamiseen, kiekkokassiin, ratakirjastoon ja sovelluksen yleiseen käytettävyyteen.",
     newItems: [
       "Selkeämpi kierroksen aloitus: kierroksen asetuksia on yksinkertaistettu, ja kierros käyttää suoraan radalle tallennettuja väylä- ja par-tietoja.",
