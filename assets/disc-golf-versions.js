@@ -1,5 +1,26 @@
 window.KH_DISC_GOLF_RELEASES = [
-  { version: "0.6.1", date: "2026-09-21", status: "Suljettu testiversio", current: true,
+  { version: "0.7.0", date: "2026-09-27", status: "Suljettu testiversio · Google Play -tarkistuksessa", current: true,
+    summary: "Versio 0.7.0 laajentaa oman pelaamisen seurantaa tuloskortin jakamisella, paikallisella Oma profiili -näkymällä ja 501 kortin Korttipakalla.",
+    newItems: [
+      "Tuloskortin jakaminen: valmis kierros voidaan jakaa tuloskorttikuvana myös kierroshistoriasta.",
+      "Oma profiili: paikallinen pelaajaprofiili kokoaa omia peli- ja korttitilastoja ilman käyttäjätiliä.",
+      "Korttipakka: mukana on 501 kerättävää Common-, Rare-, Epic- ja Legendary-korttia.",
+      "PLAYED-kortit ansaitaan pelatuista kierroksista.",
+      "GIFTED-kortin voi vastaanottaa toiselta käyttäjältä QR-koodin avulla.",
+      "Korttien FI/EN-selitteet ja frisbeegolf-termistö auttavat avaamaan korttien sisältöä.",
+      "Tuloskorttiin lisättiin väylä- ja rataennätysten saavutusmerkinnät.",
+      "Väylätulosten vahvistus kertoo selkeästi, onko tulokset vahvistettu vai onko niihin tehty muutoksia."
+    ],
+    improvedItems: [
+      "Kierroksen yhteenvedon, historian ja tuloskortin käytettävyyttä on parannettu.",
+      "Korttipakan, kielenvaihdon ja paikallisen datan toimintavarmuutta on vahvistettu.",
+      "Versio sisältää lisäksi käyttöliittymän ja toimintavarmuuden parannuksia."
+    ],
+    testerItems: [
+      "Versio 0.7.0 on lähetetty Google Playn suljetun Alpha-testauksen tarkistukseen 27.9.2026.",
+      "Versio tulee testiryhmän saataville Google Playn tarkistuksen ja käsittelyn valmistuttua."
+    ] },
+  { version: "0.6.1", date: "2026-09-21", status: "Suljettu testiversio", current: false,
     summary: "Versio 0.6.1 on julkaistu Google Playn suljetun testauksen Alpha-kanavalle ja on valittujen testaajien käytettävissä.",
     newItems: [
       "Kiekkokassin suosikit: Kiekkokassin suosikkien käyttöä on selkeytetty. Kun kaikki kiekot ovat näkyvissä, painike näyttää \"Näytä suosikit\". Suosikkinäkymässä painike vaihtuu muotoon \"Näytä kaikki\".",
