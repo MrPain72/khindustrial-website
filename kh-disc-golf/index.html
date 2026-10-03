@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>KH DISC GOLF – FAMILY &amp; FRIENDS | KH INDUSTRIAL</title>
-  <meta name="description" content="KH Disc Golf Family &amp; Friends 0.7.0 – kierrokset, tuloskortin jakaminen, Oma profiili, 501 kortin Korttipakka, radat, kiekkokassi ja minipelit.">
+  <meta name="description" content="KH Disc Golf Family &amp; Friends 0.8.0 – valinnainen matkan seuranta, sääsnapshot, kierroshistoria, jaettava tuloskortti, Kiekkokassi ja paikallinen tietosuoja.">
   <meta name="theme-color" content="#07111f">
   <meta property="og:type" content="website">
   <meta property="og:title" content="KH DISC GOLF – FAMILY &amp; FRIENDS | KH INDUSTRIAL">
@@ -40,16 +40,16 @@
 
   <section class="section upcoming-release" id="latest-version">
     <div class="wrap">
-      <span class="status">Versio 0.7.0</span>
+      <span class="status">Versio 0.8.0</span>
       <div class="eyebrow">Uusin testiversio</div>
-      <h2>KH Disc Golf Family &amp; Friends 0.7.0</h2>
-      <p class="lead">Versio 0.7.0 laajentaa oman pelaamisen seurantaa ja tuo mukaan tuloskortin jakamisen, paikallisen Oma profiili -näkymän sekä 501 kerättävän kortin Korttipakan. Versio on lähetetty Google Playn suljetun Alpha-testauksen tarkistukseen.</p>
+      <h2>KH Disc Golf Family &amp; Friends 0.8.0</h2>
+      <p class="lead">Versio 0.8.0 tuo kierroksille valinnaisen kuljetun matkan seurannan, sääsnapshotin sekä useita parannuksia Kiekkokassiin, kierroshistoriaan, jaettavaan tuloskorttiin ja tietosuojaan. Versio on julkaistu Google Playn suljettuun Alpha-testaukseen ja on valittujen testaajien käytettävissä.</p>
       <div class="upcoming-grid">
-        <article class="card upcoming-card featured"><div class="kicker">Tuloskortti</div><h3>Jaa valmis kierros kuvana</h3><p>Valmiin kierroksen tuloskortin voi jakaa myös kierroshistoriasta. Kuvassa näkyvät keskeiset tulokset, kierrokselle tallennettu kortti ja haluttaessa kierroksen kesto.</p></article>
-        <article class="card upcoming-card featured"><div class="kicker">Oma profiili</div><h3>Omat tiedot yhdellä silmäyksellä</h3><p>Paikallinen pelaajaprofiili näyttää nimen, nimikirjainavatarin sekä omat peli- ja korttitilastot ilman käyttäjätiliä tai pilvikirjautumista.</p></article>
-        <article class="card upcoming-card featured"><div class="kicker">Korttipakka</div><h3>501 kerättävää korttia</h3><p>Common-, Rare-, Epic- ja Legendary-kortit sisältävät suomalaiset ja englanninkieliset tekstit. Osassa korteista on myös käyttöä, merkitystä ja taustaa avaava selite.</p></article>
-        <article class="card upcoming-card featured"><div class="kicker">GIFTED</div><h3>Anna kortti QR-kuvalla</h3><p>Kortin voi antaa toiselle käyttäjälle QR-kuvan avulla ilman käyttäjätiliä tai palvelinta. Vastaanottaja saa GIFTED-kortin, eikä lahjoittaja menetä omaa korttiaan.</p></article>
-        <article class="card upcoming-card featured"><div class="kicker">Ennätykset</div><h3>Saavutukset tuloskortissa</h3><p>Uuden ja sivutun väyläennätyksen sekä uuden rataennätyksen tunnisteet ja selkeä legenda näkyvät jaetussa tuloskortissa. Vahvistuspainike kertoo, ovatko väylätulokset tallessa vai muuttuneet.</p></article>
+        <article class="card upcoming-card featured"><div class="kicker">Matkan seuranta</div><h3>Valinnainen GPS-mittaus</h3><p>Aktiivisen frisbeegolfkierroksen kuljettu matka voidaan mitata myös näytön ollessa sammuksissa. Vain kokonaismatka tallennetaan – ei GPS-pisteitä tai reittihistoriaa.</p></article>
+        <article class="card upcoming-card featured"><div class="kicker">Sää kierrokselle</div><h3>Paikallinen sääsnapshot</h3><p>Kierrokselle voidaan tallentaa Open-Meteon lämpötila, säätila, tuulen nopeus ja saatavilla olevat puuskat.</p></article>
+        <article class="card upcoming-card featured"><div class="kicker">Historia ja jako</div><h3>Kesto, matka ja sää mukana</h3><p>Kierroksen kesto, kuljettu matka ja sää näkyvät historiassa ja voidaan sisällyttää jaettavaan tuloskorttikuvaan.</p></article>
+        <article class="card upcoming-card featured"><div class="kicker">Kiekkokassi</div><h3>Tarkemmat tiedot ja turvallisempi tallennus</h3><p>Valmistajat, muovit, omat arvot ja painosuodatus helpottavat kokoelman hallintaa. Poistumissuoja ehkäisee tallentamattomien muutosten katoamista.</p></article>
+        <article class="card upcoming-card featured"><div class="kicker">Tietosuoja ja päivitykset</div><h3>Tiedot selkeästi saatavilla</h3><p>Tietoja sovelluksesta -näkymässä näkyvät versio, päivitysten tarkistus, tietosuojaseloste, Open-Meteo-attribuutio ja sijainnin käytön kuvaus.</p></article>
       </div>
     </div>
   </section>
@@ -120,14 +120,14 @@
 
   <section class="section"><div class="wrap">
     <div class="eyebrow">Offline ja yksityisyys</div><h2>Tiedot käyttäjän omassa hallinnassa</h2>
-    <p class="lead">Keskeinen käyttö toimii ilman verkkoyhteyttä. Sovellus ei vaadi käyttäjätiliä eikä käytä KH INDUSTRIALin omaa pilvipalvelua.</p>
+    <p class="lead">Keskeinen pelaaminen ja tulosten tallennus toimivat ilman verkkoyhteyttä. Sovellus ei vaadi käyttäjätiliä eikä käytä KH INDUSTRIALin omaa pilvipalvelua. Sääsnapshot käyttää verkkoyhteyttä Open-Meteo-palveluun.</p>
     <p class="section-copy">Pelaaja-, rata-, kierros-, tulos-, Korttipakka- ja Kiekkokassitiedot käsitellään paikallisesti käyttäjän laitteella. Käyttäjä hallitsee itse sovelluksen ZIP-varmuuskopioita.</p>
     <a class="btn btn-secondary" href="/kh-disc-golf/privacy/">Lue tietosuojaseloste</a>
   </div></section>
 
   <section class="section" id="testing"><div class="wrap">
     <div class="eyebrow">Testauksen eteneminen</div><h2>Nykyinen tila: Google Playn suljettu testaus</h2>
-    <p class="lead">Sisäinen testaus on valmis. Suljettu Alpha-testaus on nykyinen vaihe, ja versio 0.7.0 on Google Playn tarkistuksessa. Julkista versiota haetaan myöhemmin testijakson kokemusten perusteella.</p>
+    <p class="lead">Sisäinen testaus on valmis. Suljettu Alpha-testaus on nykyinen vaihe, ja versio 0.8.0 on julkaistu valitulle testiryhmälle Google Playssa. Julkista versiota haetaan myöhemmin testijakson kokemusten perusteella.</p>
     <ol class="progress-list" aria-label="Julkaisun eteneminen">
       <li><strong>Sisäinen testaus</strong><span>Valmis</span></li>
       <li class="active"><strong>Suljettu testaus</strong><span>Käynnissä</span></li>

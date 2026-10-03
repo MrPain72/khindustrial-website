@@ -1,5 +1,26 @@
 window.KH_DISC_GOLF_RELEASES = [
-  { version: "0.7.0", date: "2026-09-27", status: "Suljettu testiversio · Google Play -tarkistuksessa", current: true,
+  { version: "0.8.0", date: "2026-10-03", status: "Suljettu testiversio", current: true,
+    summary: "Versio 0.8.0 tuo kierroksille valinnaisen kuljetun matkan seurannan ja paikallisiin sääolosuhteisiin perustuvan sääsnapshotin. Samalla Kiekkokassia, kierroshistoriaa, tuloskortin jakamista, Korttipakan ansaintaa ja sovelluksen tietosuojaa on kehitetty edelleen.",
+    newItems: [
+      "Valinnainen kuljetun matkan seuranta aktiivisen frisbeegolfkierroksen aikana.",
+      "Kierrokselle voidaan tallentaa sääsnapshot: lämpötila, säätila, tuulen nopeus ja puuskat.",
+      "Kierroksen kesto, kuljettu matka ja sää voidaan näyttää historiassa ja jaettavassa tuloskortissa.",
+      "Kiekkokassiin lisättiin valmistaja- ja muovivalintoja, omien arvojen käyttö sekä painoon perustuvaa suodatusta.",
+      "Tietoja sovelluksesta -näkymässä näkyvät sovellusversio, päivitysten tarkistus, Open-Meteo-attribuutio ja tietosuojaseloste."
+    ],
+    improvedItems: [
+      "Kiekkokassin tallennusta selkeytettiin ja tallentamattomille muutoksille lisättiin poistumissuoja.",
+      "Kiekon kuvan tallennus erotettiin selkeämmin koko kiekon tallentamisesta.",
+      "PLAYED-kortti ansaitaan vähintään 20 minuuttia kestäneestä oikeasta frisbeegolfkierroksesta. Pihapelit ja minipelit eivät kerrytä PLAYED-kortteja.",
+      "Sijainnin käytöstä ja tietosuojasta annettavaa käyttäjäinformaatiota tarkennettiin.",
+      "GPS-seurannan käynnistymistä ja pysähtymistä sekä kierroksen hylkäämisen yhteydessä tapahtuvaa palvelun sulkemista parannettiin.",
+      "Versio sisältää lisäksi käytettävyyden ja toimintavarmuuden parannuksia."
+    ],
+    testerItems: [
+      "Versio 0.8.0 build 33 on julkaistu Google Playn suljettuun Alpha-testaukseen 3.10.2026.",
+      "Versio on valittujen Alpha-testaajien käytettävissä Google Playssa."
+    ] },
+  { version: "0.7.0", date: "2026-09-27", status: "Suljettu testiversio", current: false,
     summary: "Versio 0.7.0 laajentaa oman pelaamisen seurantaa tuloskortin jakamisella, paikallisella Oma profiili -näkymällä ja 501 kortin Korttipakalla.",
     newItems: [
       "Tuloskortin jakaminen: valmis kierros voidaan jakaa tuloskorttikuvana myös kierroshistoriasta.",
