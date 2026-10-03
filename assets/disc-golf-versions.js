@@ -2,11 +2,12 @@ window.KH_DISC_GOLF_RELEASES = [
   { version: "0.8.0", date: "2026-10-03", status: "Suljettu testiversio", current: true,
     summary: "Versio 0.8.0 tuo kierroksille valinnaisen kuljetun matkan seurannan ja paikallisiin sääolosuhteisiin perustuvan sääsnapshotin. Samalla Kiekkokassia, kierroshistoriaa, tuloskortin jakamista, Korttipakan ansaintaa ja sovelluksen tietosuojaa on kehitetty edelleen.",
     newItems: [
-      "Valinnainen kuljetun matkan seuranta aktiivisen frisbeegolfkierroksen aikana.",
-      "Kierrokselle voidaan tallentaa sääsnapshot: lämpötila, säätila, tuulen nopeus ja puuskat.",
-      "Kierroksen kesto, kuljettu matka ja sää voidaan näyttää historiassa ja jaettavassa tuloskortissa.",
+      "Kuljetun matkan seuranta aktiivisen frisbeegolfkierroksen aikana. Ominaisuus on oletuksena pois päältä ja sen voi ottaa käyttöön kohdasta Etusivu → ⋮ → Asetukset → Kuljetun matkan seuranta → Päällä. Ensimmäisellä käyttökerralla sovellus pyytää sijaintiluvan. Mittaus toimii aktiivisen kierroksen aikana myös näytön ollessa sammutettuna. Sovellus ei tallenna kuljettua reittiä tai GPS-pisteitä, vaan ainoastaan kierroksen lasketun kokonaismatkan.",
+      "Kierroksen sääsnapshot tallentaa kierroksen yhteyteen paikalliset sääolosuhteet, kuten lämpötilan, säätilan, tuulen nopeuden ja puuskat. Säätiedot haetaan Open-Meteo-palvelusta.",
+      "Kierroksen kesto, kuljettu matka ja sää voidaan näyttää kierroshistoriassa ja jaettavassa tuloskortissa.",
       "Kiekkokassiin lisättiin valmistaja- ja muovivalintoja, omien arvojen käyttö sekä painoon perustuvaa suodatusta.",
-      "Tietoja sovelluksesta -näkymässä näkyvät sovellusversio, päivitysten tarkistus, Open-Meteo-attribuutio ja tietosuojaseloste."
+      "Päivitysten tarkistus suoraan sovelluksesta. Uuden version voi tarkistaa kohdasta Etusivu → ⋮ → Tietoja sovelluksesta → Tarkista päivitykset. Painike avaa KH Disc Golf Family & Friends -sovelluksen Google Play -sivun, josta uuden version voi asentaa, jos päivitys on saatavilla.",
+      "Tietoja sovelluksesta -näkymässä näkyvät myös sovelluksen nykyinen versio, Open-Meteo-attribuutio ja linkki tietosuojaselosteeseen."
     ],
     improvedItems: [
       "Kiekkokassin tallennusta selkeytettiin ja tallentamattomille muutoksille lisättiin poistumissuoja.",
