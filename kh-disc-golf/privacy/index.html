@@ -32,13 +32,13 @@
     <div class="wrap content">
       <div class="eyebrow">Tietosuoja</div>
       <h1>KH DISC GOLF – FAMILY &amp; FRIENDS</h1>
-      <p class="lead">Tietosuojaseloste · päivitetty 2.10.2026</p>
+      <p class="lead">Tietosuojaseloste · päivitetty 14.10.2026</p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap content">
-      <div class="note"><strong>Lyhyesti:</strong> KH DISC GOLF – FAMILY &amp; FRIENDS tallentaa pelaamisen tiedot ensisijaisesti käyttäjän omalle laitteelle eikä käytä KH INDUSTRIALin käyttäjätilejä tai KH Disc Golf -pilvipalvelua. Valinnainen kuljetun matkan seuranta käyttää laitteen sijaintia aktiivisen kierroksen aikana. Sääsnapshotia varten laitteen senhetkinen tarkka sijainti lähetetään suoraan Open-Meteo-sääpalvelulle. GPS-reittiä tai sijaintihistoriaa ei tallenneta.</div>
+      <div class="note"><strong>Lyhyesti:</strong> Pelaamisen tiedot tallennetaan ensisijaisesti käyttäjän laitteelle. Raakoja heittomittauksen GPS-pisteitä, kuljettua reittiä tai sijaintihistoriaa ei tallenneta. Sääsnapshotia varten laitteen senhetkinen tarkka sijainti lähetetään suoraan Open-Meteolle. Palaute ja jakaminen siirtävät tietoja ulkoiseen sovellukseen vain käyttäjän käynnistämän ja hyväksymän toiminnon seurauksena.</div>
 
       <h2>1. Rekisterinpitäjä / julkaisija</h2>
       <p>KH INDUSTRIAL<br>
@@ -59,7 +59,8 @@
         <li>hankintahinta ja hankintapäivä</li>
         <li>paino, kunto, Oma arvio ja Oma mieltymys 1–5 tähteä</li>
         <li>käyttäjän galleriasta valitsema kiekkokuva</li>
-        <li>kierroksen laskettu kuljettu kokonaismatka ja sääsnapshot</li>
+        <li>harjoitukset, heittomittausten hyväksytyt matkat, suuntakulmat, kiekot ja analyysisnapshotit</li>
+        <li>kierroksen tai harjoituksen laskettu kuljettu kokonaismatka ja sääsnapshot</li>
         <li>sovelluksen asetukset</li>
         <li>käyttäjän itse luomat paikalliset ZIP-varmuuskopiot.</li>
       </ul>
@@ -70,17 +71,18 @@
 
       <h2>4. Sijainti ja kuljetun matkan seuranta</h2>
       <p>Kuljetun matkan seuranta on vapaaehtoinen ja oletusarvoisesti pois käytöstä. Käyttäjä ottaa ominaisuuden itse käyttöön, minkä jälkeen sovellus pyytää Androidin sijaintioikeutta ominaisuuden käyttöä varten.</p>
-      <p>Sijaintia käytetään käyttäjän itse käynnistämän aktiivisen frisbeegolfkierroksen aikana kuljetun matkan laskemiseen. Aktiivisen kierroksen aikana sijaintia käyttävä foreground service mahdollistaa mittauksen jatkumisen myös näytön ollessa sammutettuna tai sovelluksen ollessa hetkellisesti pois näkyvistä. Mittaus päättyy kierroksen päättyessä, ja käyttäjä voi poistaa seurannan käytöstä asetuksista.</p>
-      <p>GPS-pisteitä ei tallenneta tietokantaan, kuljettua reittiä ei tallenneta eikä koordinaattihistoriaa muodosteta. Sovellukseen tallennetaan paikallisesti vain laskettu kokonaismatka. Sovellus ei pyydä <code>ACCESS_BACKGROUND_LOCATION</code>-oikeutta.</p>
+      <p>Sijaintia käytetään käyttäjän itse käynnistämän aktiivisen kierroksen, pituusharjoituksen tai pituusheittopelin aikana kuljetun matkan laskemiseen. Foreground service mahdollistaa mittauksen jatkumisen myös näytön ollessa sammutettuna tai sovelluksen ollessa hetkellisesti pois näkyvistä. Mittaus päättyy toiminnon päättyessä tai hylkäämisessä, ja käyttäjä voi poistaa seurannan käytöstä asetuksista.</p>
+      <p>GPS-heittomittauksessa lähtö- ja päätepisteen koordinaatit, tarkkuus ja aikaleima käsitellään muistissa suoran etäisyyden ja heiton suunnan laskemiseksi. Sovellukseen tallennetaan vain käyttäjän hyväksymä laskettu matka, suuntakulma, mittausaika, valittu kiekko ja saatavilla oleva analyysisnapshot. Raakoja GPS-pisteitä, reittiä tai koordinaattihistoriaa ei tallenneta. Sovellus ei pyydä <code>ACCESS_BACKGROUND_LOCATION</code>-oikeutta.</p>
 
       <h2>5. Sääsnapshot ja Open-Meteo</h2>
       <p>Kierroksen paikallisten sääolosuhteiden hakemista varten sovellus voi lähettää laitteen senhetkisen tarkan sijainnin eli latitude- ja longitude-arvot suoraan käyttäjän laitteelta Open-Meteo-sääpalvelulle suojatulla HTTPS-yhteydellä.</p>
-      <p>Open-Meteolta haetaan esimerkiksi lämpötila, säätila, tuulen nopeus ja puuskat. KH Disc Golf ei tallenna säähaussa käytettyjä tarkkoja koordinaatteja kierroshistoriaan eikä muodosta niiden perusteella sijaintihistoriaa. Paikallisesti tallennetaan vain sääsnapshot. Koordinaatteja ei välitetä KH INDUSTRIALin omalle palvelimelle.</p>
-      <p>Open-Meteon ehtojen mukaan heidän tekniset web-palvelinlokinsa voivat sisältää maantieteellisiä koordinaatteja, ja lokit poistetaan viimeistään 90 päivän kuluttua. Lisätietoja: <a href="https://open-meteo.com/en/terms" rel="noopener noreferrer">Open-Meteon käyttöehdot ja tietosuojatiedot</a>. Säätiedot: Open-Meteo.</p>
+      <p>Open-Meteolta haetaan lämpötila, sääkoodi, tuulen nopeus, puuskat ja tuulen suunta. KH Disc Golf ei tallenna säähaussa käytettyjä tarkkoja koordinaatteja historiaan. Paikallisesti tallennetaan vain sääsnapshot. Koordinaatteja ei välitetä KH INDUSTRIALin palvelimelle.</p>
+      <p>Open-Meteon mukaan Free API voi kirjata IP-osoitteita teknisistä ja väärinkäytön estämiseen liittyvistä syistä. Vianmäärityslokit voivat sisältää pyyntö-URL:n maantieteellisine koordinaatteineen; Open-Meteo ilmoittaa poistavansa yksittäiset lokit 90 päivän kuluttua eikä jakavansa niitä kolmansille osapuolille. Palveluntarjoaja on OpenMeteo GmbH, Sveitsi. Lisätietoja: <a href="https://open-meteo.com/en/terms" rel="noopener noreferrer">Open-Meteon käyttöehdot ja tietosuojatiedot</a>.</p>
+      <p>Sovellus käyttää Open-Meteon Free APIa. Käyttö edellyttää ei-kaupallista käyttötarkoitusta, käyttörajojen noudattamista ja CC BY 4.0 -attribuutiota. Säätiedot: Open-Meteo.</p>
 
-      <h2>6. Muu tiedonsiirto</h2>
-      <p>Pelaaja-, kierros-, rata-, kiekko-, kuva- ja asetustietoja ei lähetetä KH INDUSTRIALille tai KH INDUSTRIALin omille palvelimille. Edellä kuvattu sääpyyntö Open-Meteolle on sovelluksen ulkoinen verkkoyhteys.</p>
-      <p>Kuvan tai tiedoston valinta ei tarkoita sen lähettämistä verkkoon. Valittu sisältö käsitellään paikallisesti käyttäjän laitteella.</p>
+      <h2>6. Palaute ja jakaminen</h2>
+      <p>Palaute-toiminto avaa laitteen sähköpostisovelluksen esitäytetyllä viestillä osoitteeseen <a href="mailto:kimmo@khindustrial.com">kimmo@khindustrial.com</a>. Viesti voi sisältää käyttäjän tekstin, sovellusversion, laitteen valmistajan ja mallin, Android-version, mahdollisen kierroskontekstin sekä enintään viisi käyttäjän valitsemaa, paikallisesti pienennettyä kuvaa. Käyttäjä tarkistaa viestin ja hyväksyy lähetyksen sähköpostisovelluksessa; sovellus ei lähetä palautetta taustalla.</p>
+      <p>Kun käyttäjä jakaa tuloskortin tai korttilahjan, sovellus luo paikallisen PNG-kuvan ja avaa Androidin jakovalikon. Kuva siirtyy vain käyttäjän valitsemaan sovellukseen tai palveluun. Sähköpostipalvelun, vastaanottajan ja jakokohteen omat tietosuojaehdot koskevat jatkokäsittelyä.</p>
 
       <h2>7. Kuvien ja tiedostojen valinta</h2>
       <p>Kun käyttäjä valitsee esimerkiksi ratakartan, kiekkokuvan, palautettavan varmuuskopion tai varmuuskopion tallennuspaikan, sovellus käyttää Androidin järjestelmän tarjoamaa kuva- tai tiedostovalitsinta. Sovellus käsittelee vain käyttäjän itse valitsemaa sisältöä kyseisen toiminnon toteuttamiseksi.</p>
@@ -102,10 +104,10 @@
       <p>Tietojen siirtämiseen uuteen laitteeseen käytetään sovelluksen omaa käyttäjän käynnistämää ZIP-varmuuskopiointi- ja palautustoimintoa.</p>
 
       <h2>10. Verkkoyhteys ja käyttöoikeudet</h2>
-      <p>Sovellus käyttää verkkoyhteyttä säätietojen hakemiseen Open-Meteo-palvelusta. Android-sovellus käyttää tätä varten Internet-yhteyttä ja sijaintitoimintoja varten käyttöoikeuksia <code>ACCESS_COARSE_LOCATION</code>, <code>ACCESS_FINE_LOCATION</code>, <code>FOREGROUND_SERVICE</code> ja <code>FOREGROUND_SERVICE_LOCATION</code>. Sovellus ei käytä <code>ACCESS_BACKGROUND_LOCATION</code>-oikeutta.</p>
+      <p>Sovellus käyttää verkkoyhteyttä säätietojen hakemiseen Open-Meteo-palvelusta. Android-sovellus käyttää tätä varten Internet-yhteyttä ja sijaintitoimintoja varten käyttöoikeuksia <code>ACCESS_COARSE_LOCATION</code>, <code>ACCESS_FINE_LOCATION</code>, <code>FOREGROUND_SERVICE</code> ja <code>FOREGROUND_SERVICE_LOCATION</code>. Sovellus ei käytä <code>ACCESS_BACKGROUND_LOCATION</code>-oikeutta eikä pyydä yleistä tallennustila-, kamera-, mikrofoni- tai Advertising ID -oikeutta.</p>
 
       <h2>11. Tietojen poistaminen</h2>
-      <p>Käyttäjä voi poistaa sovelluksessa olevia tietoja sovelluksen omilla poistotoiminnoilla. Kaikki sovelluksen paikalliset tiedot voidaan poistaa myös poistamalla sovellus ja sen sovellusdata Android-laitteesta. Käyttäjän erikseen tallentamat ZIP-varmuuskopiot on poistettava siitä tallennuspaikasta, johon käyttäjä on ne tallentanut.</p>
+      <p>Käyttäjä voi poistaa paikallisia tietoja sovelluksen toiminnoilla tai poistamalla sovelluksen ja sen datan. Erikseen tallennetut ZIP-varmuuskopiot ja ulkoisiin sovelluksiin jaetut tiedostot poistetaan niiden tallennuspaikoista. KH INDUSTRIALille lähetetyn palautteen poistamista voi pyytää tietosuojayhteydestä; muiden sähköposti- ja jakopalvelujen tiedot poistetaan niiden omien menettelyjen mukaisesti.</p>
 
       <h2>12. Lapset ja käyttäjätilit</h2>
       <p>Sovellus ei edellytä käyttäjätiliä, sähköpostiosoitetta tai kirjautumista. Pelaajat voidaan lisätä paikallisesti nimellä. Sovelluksen Google Play -kohderyhmä ja ikäluokitus määritetään Google Play Consolessa.</p>
