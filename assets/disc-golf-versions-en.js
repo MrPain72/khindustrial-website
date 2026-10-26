@@ -1,21 +1,32 @@
 window.KH_DISC_GOLF_RELEASES = [
   { version: "0.9.1", date: "2026-10-15", status: "Closed testing · Alpha · release 36", current: true,
-    summary: "Version 0.9.1 has been distributed through Google Play closed testing. It adds GPS throw-distance measurement and a comprehensive distance-practice workflow.",
+    summary: "The major update introduced in version 0.9.0 reached the selected test group in release 36 (0.9.1), with GPS measurement, multi-round practice, records, analysis and multiplayer distance-throwing competitions.",
     newItems: [
-      "GPS throw-distance measurement with an individual start point measures from the start position to the disc.",
-      "A shared start point makes group and multi-disc practice faster.",
-      "Multi-round distance practice supports planned rounds and switching discs between throws.",
-      "Throw styles can be recorded to compare how discs and techniques affect results.",
-      "Practice history, analysis, shareable practice results and personal records help track progress."
+      "GPS throw-distance measurement supports either a separate start point for every throw or one shared start for the measurement round. GPS results are approximate estimates that the player approves before saving.",
+      "Multi-round distance practice supports 1–10 discs and 1–10 measurement rounds, with a new disc selection available between rounds.",
+      "Per-disc overall, backhand and forehand records and throw analysis help compare results. Analysis uses available weather and wind data.",
+      "Friend discs have their own section and can be combined with personal discs in a multiplayer distance-throwing competition on one phone.",
+      "A distance-throwing competition produces one shareable scorecard for the whole group.",
+      "Practice history brings together sessions, measurement rounds, throws and analyses. A completed practice result can be previewed and shared."
     ],
     improvedItems: [
-      "The distance-practice workflow, recovery of an unfinished session and reliable session completion have been strengthened.",
-      "In-app guidance and the details shown in practice history and records have been clarified."
+      "The course-round interface, round setup and player selection have been made more compact and easier to follow.",
+      "The Finnish and English in-app guide now covers the new practice, record and group-play workflows.",
+      "Android startup was fixed by keeping the required Expo startup and splash-screen classes available in the main DEX."
     ],
     testerItems: [
-      "Release 36 (0.9.1) was distributed to the selected Google Play closed Alpha test group on 15 October 2026.",
+      "Google Play closed Alpha release 36 (0.9.1) was last updated on 15 October 2026.",
+      "Google Play granted production release access on 13 October 2026, but the app has not been released on the public production track.",
       "Local build 37 and TEST build 38 packages are not presented as Google Play releases."
     ] },
+  { version: "0.9.0", date: "2026-10-14", status: "Major-update foundation · build 34", current: false,
+    summary: "Version 0.9.0 introduced the foundation for a major practice and interface update. The features reached the selected Google Play Alpha group in 0.9.1/build 36 together with the Android startup fix.",
+    newItems: [
+      "The foundation was prepared for GPS distance practice, throw analysis, records, Friend discs and multiplayer distance-throwing competitions.",
+      "The course-round interface, round setup and player selection were redesigned."
+    ],
+    improvedItems: ["The Finnish and English in-app guide was expanded to explain the new workflows."],
+    testerItems: ["Build 34 was prepared for closed testing on 14 October 2026. The current Google Play Alpha release is 0.9.1/build 36."] },
   { version: "0.8.0", date: "2026-10-03", status: "Closed test release", current: false,
     summary: "Version 0.8.0 adds optional walking-distance tracking and a weather snapshot, with improvements to the Disc Bag, round history, shared scorecards and privacy information.",
     newItems: [

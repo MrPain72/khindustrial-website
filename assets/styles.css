@@ -136,7 +136,7 @@ h3{font-size:1.25rem;margin-bottom:10px}
 .tester-cta p{color:var(--muted)}
 .tester-timing{padding:22px;border:1px solid var(--line);border-radius:16px;background:rgba(7,17,31,.55)}
 .progress-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:28px 0;padding:0;list-style:none}
-.progress-list li{position:relative;padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02)}
+.progress-list li{position:relative;min-width:0;padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02);overflow-wrap:anywhere}
 .progress-list li:not(:last-child)::after{content:"→";position:absolute;right:-11px;top:50%;z-index:2;color:var(--accent-soft);transform:translateY(-50%)}
 .progress-list strong,.progress-list span{display:block}.progress-list span{color:var(--muted);font-size:.9rem}.progress-list .active{border-color:var(--accent)}
 code{background:#101f33;padding:.15em .35em;border-radius:5px}

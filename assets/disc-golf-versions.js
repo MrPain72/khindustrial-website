@@ -1,21 +1,32 @@
 window.KH_DISC_GOLF_RELEASES = [
   { version: "0.9.1", date: "2026-10-15", status: "Suljettu testaus · Alpha · julkaisu 36", current: true,
-    summary: "Versio 0.9.1 on jaettu Google Playn suljettuun testaukseen. Se tuo mukaan GPS-heitonpituusmittauksen sekä monipuolisen pituusheittoharjoittelun.",
+    summary: "Versiossa 0.9.0 alkanut suuri uudistus tuli valitun testiryhmän käyttöön julkaisussa 36 (0.9.1). Mukana ovat GPS-mittaus, monikierroksinen harjoittelu, ennätykset, analyysit ja yhteiset pituusheittokilpailut.",
     newItems: [
-      "GPS-heitonpituusmittaus itsenäisellä lähtöpisteellä: mittaa heitto lähtö- ja päätepisteestä.",
-      "Ryhmän yhteinen lähtöpiste nopeuttaa usean pelaajan tai usean kiekon harjoittelua.",
-      "Monikierroksisessa pituusheittoharjoittelussa voi suunnitella useita kierroksia ja vaihtaa kiekkoa heittojen välillä.",
-      "Heitoille voi tallentaa heittotyylin ja tarkastella kiekkojen sekä heittotapojen vaikutusta tuloksiin.",
-      "Harjoitushistoria, analyysit, jaettavat harjoitustulokset ja henkilökohtaiset ennätykset tukevat kehityksen seurantaa."
+      "GPS-heitonpituusmittaus toimii jokaiselle heitolle erikseen mitattavalla lähtöpisteellä tai koko mittauskierroksen yhteisellä lähtöpisteellä. GPS-tulos on suuntaa antava arvio, jonka käyttäjä hyväksyy ennen tallennusta.",
+      "Monikierroksisessa pituusheittoharjoittelussa voi valita 1–10 kiekkoa ja 1–10 mittauskierrosta sekä vaihtaa kiekkoja kierrosten välillä.",
+      "Kiekkokohtaiset kokonais-, rysty- ja kämmenennätykset sekä heittoanalyysit auttavat vertaamaan tuloksia. Analyysi käyttää saatavilla olevia sää- ja tuulitietoja.",
+      "Kaverikiekot ovat omassa osiossaan, ja niitä voi käyttää omien kiekkojen rinnalla usean pelaajan pituusheittokilpailussa yhdellä puhelimella.",
+      "Pituusheittokilpailusta muodostuu koko ryhmän yhteinen jaettava tuloskortti.",
+      "Harjoitushistoria kokoaa harjoitukset, mittauskierrokset, heitot ja analyysit. Valmiin harjoituksen tuloksen voi esikatsella ja jakaa."
     ],
     improvedItems: [
-      "Pituusheittoharjoittelun käyttöpolkua, palautumista keskeneräiseen harjoitukseen ja harjoituksen päättämistä on vahvistettu.",
-      "Sovelluksen sisäisiä käyttöohjeita sekä harjoitushistorian ja ennätysten yksityiskohtia on selkeytetty."
+      "Ratakierroksen käyttöliittymää sekä kierroksen aloitusta ja pelaajavalintaa on tiivistetty ja selkeytetty.",
+      "Suomen- ja englanninkielinen sisäinen käyttöopas on päivitetty kattamaan uudet harjoittelu-, ennätys- ja yhteispelitoiminnot.",
+      "Android-käynnistystä korjattiin varmistamalla Expon käynnistys- ja splash screen -luokkien saatavuus pää-DEXissä."
     ],
     testerItems: [
-      "Julkaisu 36 (0.9.1) on jaettu valitulle testiryhmälle Google Playn suljetussa Alpha-testauksessa 15.10.2026.",
+      "Google Playn suljetun Alpha-testauksen julkaisu 36 (0.9.1) päivitettiin viimeksi 15.10.2026.",
+      "Google Play myönsi tuotantojulkaisuoikeuden 13.10.2026, mutta sovellusta ei ole julkaistu julkiselle tuotantokanavalle.",
       "Paikallisia build 37- ja TESTI build 38 -paketteja ei merkitä Google Play -julkaisuiksi."
     ] },
+  { version: "0.9.0", date: "2026-10-14", status: "Suuren uudistuksen perusta · build 34", current: false,
+    summary: "Versio 0.9.0 toi suuren harjoittelu- ja käyttöliittymäuudistuksen perustan. Ominaisuudet tuotiin Google Playn valitulle Alpha-testiryhmälle 0.9.1/build 36:ssa Android-käynnistyskorjauksen kanssa.",
+    newItems: [
+      "GPS-pohjaisen pituusheittoharjoittelun, heittoanalyysien, ennätysten, Kaverikiekkojen ja yhteisten pituusheittokilpailujen kokonaisuus valmisteltiin.",
+      "Ratakierroksen käyttöliittymää, kierroksen aloitusta ja pelaajavalintaa uudistettiin."
+    ],
+    improvedItems: ["Sisäinen FI/EN-käyttöopas laajennettiin kuvaamaan uusia toimintoja."],
+    testerItems: ["Build 34 valmisteltiin suljettua testausta varten 14.10.2026. Nykyinen Google Play Alpha -julkaisu on 0.9.1/build 36."] },
   { version: "0.8.0", date: "2026-10-03", status: "Suljettu testiversio", current: false,
     summary: "Versio 0.8.0 tuo kierroksille valinnaisen kuljetun matkan seurannan ja paikallisiin sääolosuhteisiin perustuvan sääsnapshotin. Samalla Kiekkokassia, kierroshistoriaa, tuloskortin jakamista, Korttipakan ansaintaa ja sovelluksen tietosuojaa on kehitetty edelleen.",
     newItems: [
