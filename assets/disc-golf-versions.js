@@ -1,5 +1,5 @@
 window.KH_DISC_GOLF_RELEASES = [
-  { version: "0.9.1", date: null, dateLabel: "Julkaisupäivä vahvistamatta", status: "Google Play · suljettu testiversio", current: true,
+  { version: "0.9.1", date: "2026-10-15", status: "Suljettu testaus · Alpha · julkaisu 36", current: true,
     summary: "Versio 0.9.1 on jaettu Google Playn suljettuun testaukseen. Se tuo mukaan GPS-heitonpituusmittauksen sekä monipuolisen pituusheittoharjoittelun.",
     newItems: [
       "GPS-heitonpituusmittaus itsenäisellä lähtöpisteellä: mittaa heitto lähtö- ja päätepisteestä.",
@@ -13,8 +13,8 @@ window.KH_DISC_GOLF_RELEASES = [
       "Sovelluksen sisäisiä käyttöohjeita sekä harjoitushistorian ja ennätysten yksityiskohtia on selkeytetty."
     ],
     testerItems: [
-      "Versio 0.9.1 on jaettu valitulle testiryhmälle Google Playn suljetussa testauksessa.",
-      "Tarkkaa Google Play -jakelupäivää ei ole vahvistettu käytettävissä olevassa dokumentaatiossa. Paikallisia build 37- ja TESTI build 38 -paketteja ei merkitä Google Play -julkaisuiksi."
+      "Julkaisu 36 (0.9.1) on jaettu valitulle testiryhmälle Google Playn suljetussa Alpha-testauksessa 15.10.2026.",
+      "Paikallisia build 37- ja TESTI build 38 -paketteja ei merkitä Google Play -julkaisuiksi."
     ] },
   { version: "0.8.0", date: "2026-10-03", status: "Suljettu testiversio", current: false,
     summary: "Versio 0.8.0 tuo kierroksille valinnaisen kuljetun matkan seurannan ja paikallisiin sääolosuhteisiin perustuvan sääsnapshotin. Samalla Kiekkokassia, kierroshistoriaa, tuloskortin jakamista, Korttipakan ansaintaa ja sovelluksen tietosuojaa on kehitetty edelleen.",

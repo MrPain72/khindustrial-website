@@ -1,5 +1,5 @@
 window.KH_DISC_GOLF_RELEASES = [
-  { version: "0.9.1", date: null, dateLabel: "Release date not confirmed", status: "Google Play · closed test release", current: true,
+  { version: "0.9.1", date: "2026-10-15", status: "Closed testing · Alpha · release 36", current: true,
     summary: "Version 0.9.1 has been distributed through Google Play closed testing. It adds GPS throw-distance measurement and a comprehensive distance-practice workflow.",
     newItems: [
       "GPS throw-distance measurement with an individual start point measures from the start position to the disc.",
@@ -13,8 +13,8 @@ window.KH_DISC_GOLF_RELEASES = [
       "In-app guidance and the details shown in practice history and records have been clarified."
     ],
     testerItems: [
-      "Version 0.9.1 has been distributed to the selected Google Play closed test group.",
-      "The exact Google Play distribution date is not confirmed by the available documentation. Local build 37 and TEST build 38 packages are not presented as Google Play releases."
+      "Release 36 (0.9.1) was distributed to the selected Google Play closed Alpha test group on 15 October 2026.",
+      "Local build 37 and TEST build 38 packages are not presented as Google Play releases."
     ] },
   { version: "0.8.0", date: "2026-10-03", status: "Closed test release", current: false,
     summary: "Version 0.8.0 adds optional walking-distance tracking and a weather snapshot, with improvements to the Disc Bag, round history, shared scorecards and privacy information.",
