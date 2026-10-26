@@ -42,6 +42,9 @@ a:hover{color:var(--accent-soft)}
 }
 .nav-links{display:flex;gap:26px;align-items:center;font-size:.96rem}
 .nav-links a[aria-current="page"]{color:var(--accent-soft)}
+.language-switcher{display:inline-flex;align-items:center;gap:7px;padding-left:18px;border-left:1px solid var(--line);font-weight:800;letter-spacing:.06em}
+.language-switcher a{color:var(--muted)}
+.language-switcher a[aria-current="page"]{color:var(--accent-soft)}
 .menu-button{
   display:none;background:none;border:1px solid var(--line);color:var(--text);
   border-radius:10px;padding:8px 11px;font-size:1rem
@@ -145,6 +148,7 @@ code{background:#101f33;padding:.15em .35em;border-radius:5px}
     border-radius:14px
   }
   .nav-links.open{display:flex}
+  .language-switcher{padding:12px 0 0;border-left:0;border-top:1px solid var(--line);width:100%}
   .grid,.feature-list,.upcoming-grid,.compact-feature-grid,.tester-cta{grid-template-columns:1fr}
   .upcoming-card.featured:first-child{grid-column:auto}
   .tester-cta{padding:22px}

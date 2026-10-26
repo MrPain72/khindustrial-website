@@ -1,5 +1,22 @@
 window.KH_DISC_GOLF_RELEASES = [
-  { version: "0.8.0", date: "2026-10-03", status: "Suljettu testiversio", current: true,
+  { version: "0.9.1", date: null, dateLabel: "Julkaisupäivä vahvistamatta", status: "Google Play · suljettu testiversio", current: true,
+    summary: "Versio 0.9.1 on jaettu Google Playn suljettuun testaukseen. Se tuo mukaan GPS-heitonpituusmittauksen sekä monipuolisen pituusheittoharjoittelun.",
+    newItems: [
+      "GPS-heitonpituusmittaus itsenäisellä lähtöpisteellä: mittaa heitto lähtö- ja päätepisteestä.",
+      "Ryhmän yhteinen lähtöpiste nopeuttaa usean pelaajan tai usean kiekon harjoittelua.",
+      "Monikierroksisessa pituusheittoharjoittelussa voi suunnitella useita kierroksia ja vaihtaa kiekkoa heittojen välillä.",
+      "Heitoille voi tallentaa heittotyylin ja tarkastella kiekkojen sekä heittotapojen vaikutusta tuloksiin.",
+      "Harjoitushistoria, analyysit, jaettavat harjoitustulokset ja henkilökohtaiset ennätykset tukevat kehityksen seurantaa."
+    ],
+    improvedItems: [
+      "Pituusheittoharjoittelun käyttöpolkua, palautumista keskeneräiseen harjoitukseen ja harjoituksen päättämistä on vahvistettu.",
+      "Sovelluksen sisäisiä käyttöohjeita sekä harjoitushistorian ja ennätysten yksityiskohtia on selkeytetty."
+    ],
+    testerItems: [
+      "Versio 0.9.1 on jaettu valitulle testiryhmälle Google Playn suljetussa testauksessa.",
+      "Tarkkaa Google Play -jakelupäivää ei ole vahvistettu käytettävissä olevassa dokumentaatiossa. Paikallisia build 37- ja TESTI build 38 -paketteja ei merkitä Google Play -julkaisuiksi."
+    ] },
+  { version: "0.8.0", date: "2026-10-03", status: "Suljettu testiversio", current: false,
     summary: "Versio 0.8.0 tuo kierroksille valinnaisen kuljetun matkan seurannan ja paikallisiin sääolosuhteisiin perustuvan sääsnapshotin. Samalla Kiekkokassia, kierroshistoriaa, tuloskortin jakamista, Korttipakan ansaintaa ja sovelluksen tietosuojaa on kehitetty edelleen.",
     newItems: [
       "Kuljetun matkan seuranta aktiivisen frisbeegolfkierroksen aikana. Ominaisuus on oletuksena pois päältä ja sen voi ottaa käyttöön kohdasta Etusivu → ⋮ → Asetukset → Kuljetun matkan seuranta → Päällä. Ensimmäisellä käyttökerralla sovellus pyytää sijaintiluvan. Mittaus toimii aktiivisen kierroksen aikana myös näytön ollessa sammutettuna. Sovellus ei tallenna kuljettua reittiä tai GPS-pisteitä, vaan ainoastaan kierroksen lasketun kokonaismatkan.",
