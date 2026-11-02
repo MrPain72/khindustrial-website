@@ -7,17 +7,23 @@ window.KH_DISC_GOLF_RELEASES = [
       "Kiekkokohtaiset kokonais-, rysty- ja kämmenennätykset sekä heittoanalyysit auttavat vertaamaan tuloksia. Analyysi käyttää saatavilla olevia sää- ja tuulitietoja.",
       "Kaverikiekot ovat omassa osiossaan, ja niitä voi käyttää omien kiekkojen rinnalla usean pelaajan pituusheittokilpailussa yhdellä puhelimella.",
       "Pituusheittokilpailusta muodostuu koko ryhmän yhteinen jaettava tuloskortti.",
-      "Harjoitushistoria kokoaa harjoitukset, mittauskierrokset, heitot ja analyysit. Valmiin harjoituksen tuloksen voi esikatsella ja jakaa."
+      "Harjoitushistoria kokoaa harjoitukset, mittauskierrokset, heitot ja analyysit. Valmiin harjoituksen tuloksen voi esikatsella ja jakaa.",
+      "Build 37 lisää Ratakirjastoon kolmen väylän KH Disc Golf -mallikartan, jonka voi avata, zoomata, panoroida, piilottaa ja palauttaa.",
+      "Mallikartan ohjelinkki avaa suoraan FI/EN-ratakartan luontiohjeen. Oman kartan voi valita galleriasta opastetaulun kuvaamisen tai käyttöluvallisen verkkosivukuvan tallentamisen jälkeen."
     ],
     improvedItems: [
       "Ratakierroksen käyttöliittymää sekä kierroksen aloitusta ja pelaajavalintaa on tiivistetty ja selkeytetty.",
       "Suomen- ja englanninkielinen sisäinen käyttöopas on päivitetty kattamaan uudet harjoittelu-, ennätys- ja yhteispelitoiminnot.",
-      "Android-käynnistystä korjattiin varmistamalla Expon käynnistys- ja splash screen -luokkien saatavuus pää-DEXissä."
+      "Android-käynnistystä korjattiin varmistamalla Expon käynnistys- ja splash screen -luokkien saatavuus pää-DEXissä.",
+      "Harjoitusten elinkaaren ja GPS-toimintojen virheitä on korjattu sekä käytettävyyttä, ohjeita ja toimintavarmuutta parannettu.",
+      "Build 37 poistaa 12 aiemmin sisällytettyä kolmannen osapuolen ratakarttakuvaa. Ratojen metatiedot säilyvät käytettävissä ilman valmista karttakuvaa."
     ],
     testerItems: [
       "Google Playn suljetun Alpha-testauksen julkaisu 36 (0.9.1) päivitettiin viimeksi 15.10.2026.",
       "Google Play myönsi tuotantojulkaisuoikeuden 13.10.2026, mutta sovellusta ei ole julkaistu julkiselle tuotantokanavalle.",
-      "Paikallisia build 37- ja TESTI build 38 -paketteja ei merkitä Google Play -julkaisuiksi."
+      "Build 37 (0.9.1) ladattiin Google Playhin ja lähetettiin tarkastukseen 2.11.2026, mutta sitä ei ole vielä vahvistettu testaajien saataville.",
+      "Sovellus on edelleen suljetussa Alpha-testauksessa, joten virheitä voi löytyä. Tavoitteena on edetä hyväksyttyjen käyttökokeiden jälkeen yleiseen tuotantojulkaisuun ilman tällä hetkellä pakolliseksi suunniteltua avointa testivaihetta.",
+      "Suljettua testiryhmää on tarkoitus käyttää jatkossakin suurempien ominaisuuksien ennakkotestaukseen."
     ] },
   { version: "0.9.0", date: "2026-10-14", status: "Suuren uudistuksen perusta · build 34", current: false,
     summary: "Versio 0.9.0 toi suuren harjoittelu- ja käyttöliittymäuudistuksen perustan. Ominaisuudet tuotiin Google Playn valitulle Alpha-testiryhmälle 0.9.1/build 36:ssa Android-käynnistyskorjauksen kanssa.",

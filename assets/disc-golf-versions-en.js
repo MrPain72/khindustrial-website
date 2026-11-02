@@ -7,17 +7,23 @@ window.KH_DISC_GOLF_RELEASES = [
       "Per-disc overall, backhand and forehand records and throw analysis help compare results. Analysis uses available weather and wind data.",
       "Friend discs have their own section and can be combined with personal discs in a multiplayer distance-throwing competition on one phone.",
       "A distance-throwing competition produces one shareable scorecard for the whole group.",
-      "Practice history brings together sessions, measurement rounds, throws and analyses. A completed practice result can be previewed and shared."
+      "Practice history brings together sessions, measurement rounds, throws and analyses. A completed practice result can be previewed and shared.",
+      "Build 37 adds a three-hole KH Disc Golf demo map to the Course Library. It can be opened, zoomed, panned, hidden and restored.",
+      "The demo-map link opens the Finnish or English course-map creation guide directly. A personal map can be selected from the gallery after photographing an information board or saving a permitted website image."
     ],
     improvedItems: [
       "The course-round interface, round setup and player selection have been made more compact and easier to follow.",
       "The Finnish and English in-app guide now covers the new practice, record and group-play workflows.",
-      "Android startup was fixed by keeping the required Expo startup and splash-screen classes available in the main DEX."
+      "Android startup was fixed by keeping the required Expo startup and splash-screen classes available in the main DEX.",
+      "Practice lifecycle and GPS issues have been fixed, with further usability, guidance and reliability improvements.",
+      "Build 37 removes 12 previously bundled third-party course-map images. Course metadata remains available without a ready-made map image."
     ],
     testerItems: [
       "Google Play closed Alpha release 36 (0.9.1) was last updated on 15 October 2026.",
       "Google Play granted production release access on 13 October 2026, but the app has not been released on the public production track.",
-      "Local build 37 and TEST build 38 packages are not presented as Google Play releases."
+      "Build 37 (0.9.1) was uploaded to Google Play and submitted for review on 2 November 2026, but it has not yet been confirmed available to testers.",
+      "The app remains in closed Alpha testing, so defects may be found. The goal is to proceed to a general production release after successful usage trials, with no mandatory open-testing phase currently planned.",
+      "The closed test group is intended to remain in use for preview testing of major future features."
     ] },
   { version: "0.9.0", date: "2026-10-14", status: "Major-update foundation · build 34", current: false,
     summary: "Version 0.9.0 introduced the foundation for a major practice and interface update. The features reached the selected Google Play Alpha group in 0.9.1/build 36 together with the Android startup fix.",
