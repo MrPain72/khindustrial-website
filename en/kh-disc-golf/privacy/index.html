@@ -1,50 +1,123 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Privacy | KH Disc Golf – Family &amp; Friends</title>
-  <meta name="description" content="Privacy notice for KH Disc Golf – Family & Friends."><meta name="theme-color" content="#07111f">
+  <meta name="description" content="Privacy notice for KH Disc Golf – Family &amp; Friends.">
+  <meta name="theme-color" content="#07111f">
   <link rel="canonical" href="https://khindustrial.com/en/kh-disc-golf/privacy/">
-  <link rel="alternate" hreflang="fi" href="https://khindustrial.com/kh-disc-golf/privacy/"><link rel="alternate" hreflang="en" href="https://khindustrial.com/en/kh-disc-golf/privacy/"><link rel="alternate" hreflang="x-default" href="https://khindustrial.com/kh-disc-golf/privacy/">
+  <link rel="alternate" hreflang="fi" href="https://khindustrial.com/kh-disc-golf/privacy/">
+  <link rel="alternate" hreflang="en" href="https://khindustrial.com/en/kh-disc-golf/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://khindustrial.com/kh-disc-golf/privacy/">
   <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
-<header class="site-header"><div class="wrap nav"><a class="brand" href="/"><span class="brand-mark">KH</span><span>KH INDUSTRIAL</span></a><button class="menu-button" aria-expanded="false" aria-label="Open menu">Menu</button><nav class="nav-links" aria-label="Main navigation"><a href="/">Home</a><a href="/en/kh-disc-golf/">KH DISC GOLF</a><a href="/en/kh-disc-golf/updates/">Updates</a><a href="/en/kh-disc-golf/privacy/" aria-current="page">Privacy</a><span class="language-switcher" aria-label="Language"><a href="/kh-disc-golf/privacy/" lang="fi" hreflang="fi">FI</a><span aria-hidden="true">/</span><a href="/en/kh-disc-golf/privacy/" lang="en" aria-current="page">EN</a></span></nav></div></header>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/">
+      <span class="brand-mark">KH</span>
+      <span>KH INDUSTRIAL</span>
+    </a>
+    <button class="menu-button" aria-expanded="false" aria-label="Open menu">Menu</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/en/kh-disc-golf/">KH DISC GOLF</a>
+      <a href="/en/kh-disc-golf/updates/">Updates</a>
+      <a href="/en/kh-disc-golf/privacy/" aria-current="page">Privacy</a>
+      <span class="language-switcher" aria-label="Language"><a href="/kh-disc-golf/privacy/" lang="fi" hreflang="fi">FI</a><span aria-hidden="true">/</span><a href="/en/kh-disc-golf/privacy/" lang="en" aria-current="page">EN</a></span>
+    </nav>
+  </div>
+</header>
+
 <main>
-  <section class="hero" style="padding-bottom:50px"><div class="wrap content"><div class="eyebrow">Privacy</div><h1>KH Disc Golf – Family &amp; Friends</h1><p class="lead">Privacy notice · updated 14 October 2026</p></div></section>
-  <section class="section"><div class="wrap content">
-    <div class="note"><strong>In brief:</strong> Playing data is primarily stored on the user's device. Raw GPS points from throw measurement, routes and location history are not stored. For a weather snapshot, the device sends its current precise location directly to Open-Meteo. Feedback and sharing transfer information to an external app only when the user starts and approves the action.</div>
+  <section class="hero" style="padding-bottom:50px">
+    <div class="wrap content">
+      <div class="eyebrow">Privacy</div>
+      <h1>KH Disc Golf – Family &amp; Friends</h1>
+      <p class="lead">Privacy notice · version 0.9.1 · updated 2 November 2026</p>
+    </div>
+  </section>
 
-    <h2>1. Controller / publisher</h2><p>KH INDUSTRIAL<br>Email: <a href="mailto:kimmo@khindustrial.com">kimmo@khindustrial.com</a></p>
+  <section class="section">
+    <div class="wrap content">
+      <div class="note"><strong>In brief:</strong> Gameplay data is primarily stored on the user's device. Raw GPS fixes, throw coordinates and travelled routes are not stored. To retrieve a weather snapshot, the current location coordinates returned by Android are sent directly to Open-Meteo without app-side rounding. Card-gift QR codes are read on the device with Google ML Kit; the image and QR-code content are not sent to Google, but ML Kit sends technical diagnostics and usage metrics to Google. Feedback and sharing transfer data to an external app only after a user-initiated and approved action.</div>
 
-    <h2>2. Information processed by the app</h2><p>Depending on the user's actions, the app may process and store the following in local device storage:</p>
-    <ul><li>player names and local player profiles</li><li>round and game scores</li><li>round history, records and achievement snapshots</li><li>custom courses, course settings and personal course ratings</li><li>personal course map images selected by the user</li><li>the Card Deck and card acquisition details</li><li>discs added to the Disc Bag and their saved details</li><li>disc name, manufacturer, plastic, colour and user notes</li><li>Speed, Glide, Turn and Fade flight numbers</li><li>purchase price and date</li><li>weight, condition, My rating and My preference from one to five stars</li><li>a disc image selected from the user's gallery</li><li>practice sessions, accepted throw distances, direction angles, discs and analysis snapshots</li><li>the calculated total distance walked during a round or practice session and a weather snapshot</li><li>app settings</li><li>local ZIP backups created by the user.</li></ul>
+      <h2>1. Controller / publisher</h2>
+      <p>KH INDUSTRIAL<br>
+      Email: <a href="mailto:kimmo@khindustrial.com">kimmo@khindustrial.com</a></p>
 
-    <h2>3. Storage</h2><p>Information is stored on the user's device in the app's local SQLite database and app-managed files. Course maps and disc images selected by the user are copied to the app's local storage.</p><p>The app does not use KH INDUSTRIAL user accounts, sign-in or a KH Disc Golf cloud service. KH INDUSTRIAL does not receive normal player, round, course, disc, image or settings data on its server. The app does not use analytics, advertising SDKs, Firebase, crash-reporting services or telemetry.</p>
+      <h2>2. Data stored on the device</h2>
+      <p>The app may store locally in SQLite, settings and app-managed files:</p>
+      <ul>
+        <li>local player profiles and names</li>
+        <li>rounds, games, practices, results, statistics, records and rewards</li>
+        <li>accepted throw distances, bearings, timestamps, disc information and available analysis snapshots</li>
+        <li>measurement sessions, calculated walking totals and weather snapshots</li>
+        <li>custom courses, course settings, practice-location names and personal ratings</li>
+        <li>Disc Bag information, notes and user-selected images</li>
+        <li>user-selected course maps</li>
+        <li>local card-collection data</li>
+        <li>settings and user-created ZIP backups.</li>
+      </ul>
+      <p>The app requires no account or sign-in. KH INDUSTRIAL does not automatically receive this local data. The app does not use an advertising SDK, user profiling, Firebase Analytics or a separate crash-reporting service. Technical data collection by Google ML Kit, which is used for QR-code reading, is described in section 8.</p>
 
-    <h2>4. Location and distance walked</h2><p>Distance tracking is optional and off by default. The user enables it and the app then requests the Android location permission needed for the feature.</p><p>Location is used to calculate distance during an active round, distance-practice session or distance-throwing game started by the user. A foreground service allows measurement to continue while the screen is off or the app is temporarily not visible. Measurement ends when the activity is completed or discarded, and tracking can be disabled in settings.</p><p>For GPS throw measurement, start and end coordinates, accuracy and timestamps are processed in memory to calculate straight-line distance and throw direction. Only the user-approved calculated distance, direction angle, measurement time, selected disc and available analysis snapshot are saved. Raw GPS points, routes and coordinate history are not stored. The app does not request <code>ACCESS_BACKGROUND_LOCATION</code>.</p>
+      <h2>3. GPS throw measurement</h2>
+      <p>The user starts GPS measurement. The accepted start and endpoint latitude, longitude, accuracy and timestamp are processed in memory to calculate straight-line distance and bearing.</p>
+      <p>Only the accepted calculated result, time, selected disc and available analysis snapshot are stored. Raw fixes, their accuracy and routes are neither stored nor sent to KH INDUSTRIAL, Open-Meteo or Google ML Kit. A cancelled or rejected measurement creates no throw record.</p>
 
-    <h2>5. Weather snapshots and Open-Meteo</h2><p>To retrieve local weather for a round, the app may send the device's current precise latitude and longitude directly from the device to Open-Meteo over an encrypted HTTPS connection.</p><p>The app retrieves temperature, weather code, wind speed, gusts and wind direction. KH Disc Golf does not store the precise coordinates used for a weather request in history; only the weather snapshot is stored locally. Coordinates are not sent to a KH INDUSTRIAL server.</p><p>Open-Meteo states that its Free API may log IP addresses for technical and abuse-prevention purposes. Diagnostic logs may contain request URLs with geographic coordinates; Open-Meteo states that individual logs are deleted after 90 days and are not shared with third parties. The provider is OpenMeteo GmbH, Switzerland. For details, see <a href="https://open-meteo.com/en/terms" rel="noopener noreferrer">Open-Meteo's terms and privacy information</a>.</p><p>The app uses Open-Meteo's Free API. Use requires a non-commercial purpose, compliance with usage limits and CC BY 4.0 attribution. Weather data: Open-Meteo.</p>
+      <h2>4. Walking-distance tracking and location service</h2>
+      <p>Walking-distance tracking is optional and off by default. During a user-started active round, Distance Practice or Distance Game session, location may be used by a foreground service so calculation can continue while the screen is off or the app is temporarily not visible.</p>
+      <p>GPS points are processed in memory and only the calculated total is stored locally. Raw points, routes and location history are neither stored nor sent to an external service. Tracking is stopped when the activity is completed or abandoned or when tracking is disabled. The app does not request <code>ACCESS_BACKGROUND_LOCATION</code>. Android or the device manufacturer may still interrupt the service, for example because of process termination or power management.</p>
 
-    <h2>6. Feedback and sharing</h2><p>The feedback feature opens the device's email app with a pre-filled message to <a href="mailto:kimmo@khindustrial.com">kimmo@khindustrial.com</a>. The message may include the user's text, app version, device manufacturer and model, Android version, optional round context and up to five images selected by the user and reduced locally. The user reviews and approves the message in the email app; the app does not send feedback in the background.</p><p>When a user shares a scorecard or card gift, the app creates a local PNG image and opens the Android share sheet. The image is transferred only to the app or service selected by the user. Further processing is governed by the privacy terms of the email provider, recipient or sharing destination.</p>
+      <h2>5. Weather snapshots and Open-Meteo</h2>
+      <p>When location permission is granted and weather context is needed, the app obtains the current <code>latitude</code> and <code>longitude</code> coordinates returned by Android and sends them over HTTPS to <code>api.open-meteo.com</code>. The coordinates may be precise or approximate depending on the Android location permission granted by the user and the location available to the device. The app does not round or otherwise reduce the precision of the coordinates before transmission. The request asks for current temperature, weather code, wind speed, gusts and wind direction. Coordinates are not sent to a KH INDUSTRIAL server.</p>
+      <p>The returned weather values, observation time and provider name may be stored locally. The coordinates used for the request are not stored in app history. Open-Meteo states that its Free API may log IP addresses for technical and abuse-prevention purposes and that troubleshooting web-server logs may contain request URLs with geographical coordinates. It states that individual logs are deleted after 90 days and are not shared with third parties.</p>
+      <p>Provider: OpenMeteo GmbH, Switzerland. <a href="https://open-meteo.com/en/terms" rel="noopener noreferrer">Open-Meteo terms and privacy</a>.</p>
+      <p>The app uses the Open-Meteo Free API. Its terms restrict the Free API to non-commercial use, impose usage limits and require attribution under CC BY 4.0. The app displays “Weather data: Open-Meteo”. If the app's use becomes commercial, the API licence must be reassessed before distribution.</p>
 
-    <h2>7. Selecting images and files</h2><p>When the user selects a course map, disc image, backup to restore or backup destination, the app uses Android's system image or file picker. It processes only the content selected by the user for that action.</p><p>A disc image is selected with Android's system photo picker. The app does not gain general access to the complete photo library. The selected image is copied to local app storage and may be included in a ZIP backup created by the user. The app does not use the camera.</p>
+      <h2>6. Feedback by email</h2>
+      <p>Feedback opens the device email app with a prepared message to <a href="mailto:kimmo@khindustrial.com">kimmo@khindustrial.com</a>. It may contain user-entered text, app version and build, device manufacturer and model, Android version, possible round name, hole number and player count, and up to five user-selected images that are resized locally.</p>
+      <p>KH Disc Golf does not send email in the background. The user reviews the recipient and content and approves sending in the email app. The user's email provider, transmission services and KH INDUSTRIAL's email provider then process the message under their own terms. Received feedback remains in the recipient mailbox until deleted. The user may ask KH INDUSTRIAL to delete feedback under its control by sending a request to <a href="mailto:kimmo@khindustrial.com">kimmo@khindustrial.com</a>.</p>
 
-    <h2>8. The app's ZIP backup</h2><p>The user can create a local ZIP backup in a chosen storage location. A backup may contain:</p><ul><li>the local SQLite database</li><li>app settings</li><li>the user's personal course maps</li><li>local Disc Bag images.</li></ul><p>The backup is not sent to KH INDUSTRIAL or its servers. The user is responsible for where a backup is stored and how it is retained, transferred and deleted.</p>
+      <h2>7. Sharing scorecards and card gifts</h2>
+      <p>When the user chooses to share, the app creates a local PNG image and opens Android sharing. The image is transferred only to the app or service selected by the user, whose privacy terms govern further processing. The app does not share automatically or select a recipient.</p>
 
-    <h2>9. Android system backup</h2><p>The app does not participate in Android cloud backup. Its local database, custom course maps, Disc Bag images, settings and other app-managed user files are excluded.</p><p>The same data is also excluded from device-to-device transfer on Android 12 and newer. KH INDUSTRIAL cannot control manufacturer or operating-system behaviour outside the Android rules defined by the app.</p><p>To move data to a new device, use the app's user-initiated ZIP backup and restore feature.</p>
+      <h2>8. QR-code reading and Google ML Kit</h2>
+      <p>When a user chooses to import a card gift from an image, the user selects the image with the Android system picker and the app reads its QR code with the Google ML Kit barcode scanner. The QR image and decoded content are processed on the device. Under Google's ML Kit terms, the image, QR-code content and recognition result are not sent to Google servers.</p>
+      <p>Android automatically starts the ML Kit initializer included in the app when the app process starts, before any possible QR import. Google states that ML Kit collects technical information for diagnostics and usage analytics, including device manufacturer, model, OS version and build, available ML hardware accelerators, app package name and version, a per-installation identifier, performance and latency metrics, API configuration, input and output size, feature version, event types and error codes. ML Kit may also contact Google servers to receive fixes, models or hardware-accelerator compatibility information.</p>
+      <p>Google states that this technical data is encrypted in transit using HTTPS and is not shared with third parties. It is used for ML Kit diagnostics, usage analytics, maintenance, improvement and abuse detection. This is not advertising or user-profiling analytics operated by KH INDUSTRIAL. Further information: <a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="noopener noreferrer">ML Kit data disclosure</a> and <a href="https://developers.google.com/ml-kit/terms" rel="noopener noreferrer">ML Kit terms and privacy</a>.</p>
 
-    <h2>10. Network access and permissions</h2><p>The app uses a network connection to retrieve weather from Open-Meteo. The Android app therefore uses Internet access and the location permissions <code>ACCESS_COARSE_LOCATION</code>, <code>ACCESS_FINE_LOCATION</code>, <code>FOREGROUND_SERVICE</code> and <code>FOREGROUND_SERVICE_LOCATION</code>. It does not use <code>ACCESS_BACKGROUND_LOCATION</code> or request general storage, camera, microphone or Advertising ID permission.</p>
+      <h2>9. Images, files and backups</h2>
+      <p>Course maps, disc images, feedback images, card-gift images containing QR codes and backups are selected with Android system pickers. The app does not receive general access to the photo library and does not request camera or microphone permission. Course and disc images are copied to local app storage. Temporary optimized feedback copies are stored in cache; older feedback copies are removed when new feedback is prepared.</p>
+      <p>A user-created ZIP backup may contain the SQLite database, settings, course maps and disc images. The app does not send backups to KH INDUSTRIAL. The user controls the destination and any later sharing.</p>
 
-    <h2>11. Deleting information</h2><p>The user can delete local information with app features or by uninstalling the app and removing its data. Separately saved ZIP backups and files shared to external apps must be deleted from their storage locations. Deletion of feedback sent to KH INDUSTRIAL may be requested through the privacy contact; other email and sharing services follow their own procedures.</p>
+      <h2>10. Retention and deletion</h2>
+      <p>Local data remains until deleted through app functions or by removing the app and its data. Separately saved backups and files shared to external apps must be deleted from those destinations. Android cloud backup and automatic device-to-device app-data transfer are disabled by the app's backup rules.</p>
+      <p>The user may ask KH INDUSTRIAL to delete feedback under its control by sending an email to <a href="mailto:kimmo@khindustrial.com">kimmo@khindustrial.com</a>. KH INDUSTRIAL cannot directly delete or promise deletion of data held by Open-Meteo, Google, the user's email provider or a sharing destination selected by the user. Those services apply their own retention and deletion procedures. Open-Meteo's stated log retention is described in section 5 and Google ML Kit processing in section 8.</p>
 
-    <h2>12. Children and user accounts</h2><p>The app does not require an account, email address or sign-in. Players can be added locally by name. The Google Play target audience and age rating are defined in Google Play Console.</p>
+      <h2>11. Network and permissions</h2>
+      <p>Release 0.9.1 uses <code>ACCESS_COARSE_LOCATION</code>, <code>ACCESS_FINE_LOCATION</code>, <code>FOREGROUND_SERVICE</code> and <code>FOREGROUND_SERVICE_LOCATION</code> for location features. Internet access is used for Open-Meteo weather requests, Google ML Kit technical connections, and user-opened Google Play and privacy links. Email and sharing transfers take place through the external app chosen by the user.</p>
+      <p>The app does not request <code>ACCESS_BACKGROUND_LOCATION</code>, broad storage, camera, microphone or Advertising ID permission.</p>
 
-    <h2>13. Changes to this notice</h2><p>This notice will be updated if the app later adds online services, analytics, user accounts or other processing that changes the current model.</p>
+      <h2>12. Children and accounts</h2>
+      <p>The app requires no account, email address or sign-in. Players may be added locally by name. The Google Play target audience and age rating are configured separately in Play Console.</p>
 
-    <h2>14. Contact</h2><p>Privacy questions: <a href="mailto:kimmo@khindustrial.com">kimmo@khindustrial.com</a>.</p>
-  </div></section>
+      <h2>13. Changes and contact</h2>
+      <p>This policy is updated when the app's data handling changes.</p>
+      <p>Privacy questions, questions about local data, and requests concerning feedback sent to KH INDUSTRIAL: <a href="mailto:kimmo@khindustrial.com">kimmo@khindustrial.com</a>.</p>
+    </div>
+  </section>
 </main>
-<footer class="site-footer"><div class="wrap footer-grid"><div><strong>KH INDUSTRIAL</strong> · Software development projects · © <span data-year>2026</span></div><div>App feedback and support: <a href="mailto:kimmo@khindustrial.com">kimmo@khindustrial.com</a></div></div></footer>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div><strong>KH INDUSTRIAL</strong> · Software development projects · © <span data-year>2026</span></div>
+    <div>App feedback and support: <a href="mailto:kimmo@khindustrial.com">kimmo@khindustrial.com</a></div>
+  </div>
+</footer>
 <script src="/assets/app.js"></script>
-</body></html>
+
+</body>
+</html>
