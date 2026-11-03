@@ -8,6 +8,7 @@ window.KH_DISC_GOLF_RELEASES = [
     ],
     testerItems: [
       "Build 38 (0.9.1) julkaistiin Google Playn suljettuun Alpha-testaukseen 3.11.2026.",
+      "Samsungin TESTI-päivityksessä käyttäjän omat ratakartat sekä tii- ja korimerkinnät säilyivät päivityksen jälkeen.",
       "Sovellus ei ole yleisessä tuotantojakelussa. Google Play -sivu näkyy hyväksytylle testaajalle oikealla Google-tilillä.",
       "Jos vanhemman sovellusversion päivityspainike näyttää virheen, päivityksen voi avata suoraan Play Kaupasta."
     ] },

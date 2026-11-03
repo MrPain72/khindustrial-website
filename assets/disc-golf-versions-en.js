@@ -8,6 +8,7 @@ window.KH_DISC_GOLF_RELEASES = [
     ],
     testerItems: [
       "Build 38 (0.9.1) was released to Google Play closed Alpha testing on 3 November 2026.",
+      "In the Samsung TESTI update, the user's personal course maps and tee and basket markers remained available after the update.",
       "The app is not on the public production track. Its Google Play page is available to an approved tester signed in with the correct Google account.",
       "If an older app version's update button shows an error, the update can be opened directly in Play Store."
     ] },
