@@ -1,6 +1,18 @@
 window.KH_DISC_GOLF_RELEASES = [
-  { version: "0.9.1", date: "2026-10-15", status: "Suljettu testaus · Alpha · julkaisu 36", current: true,
-    summary: "Versiossa 0.9.0 alkanut suuri uudistus tuli valitun testiryhmän käyttöön julkaisussa 36 (0.9.1). Mukana ovat GPS-mittaus, monikierroksinen harjoittelu, ennätykset, analyysit ja yhteiset pituusheittokilpailut.",
+  { version: "0.9.1", date: "2026-11-03", status: "Suljettu testaus · Alpha · build 38", current: true,
+    summary: "Build 38 parantaa omien ratakarttakuvien lisäämisen yhteensopivuutta ja korjaa sovelluksen Google Play -päivityslinkin.",
+    newItems: [],
+    improvedItems: [
+      "Käyttäjän oman ratakarttakuvan valintaa, käsittelyä ja pysyvää tallennusta Androidin galleriasta on parannettu. Korjaus on testattu Samsung- ja Huawei-laitteilla.",
+      "Tarkista päivitykset -toiminto käyttää nyt tuotantosovelluksen Google Play -sivun HTTPS-linkkiä. Aiempi linkitys saattoi näyttää virheen ”Ei enää saatavana”, vaikka sovellus löytyi Play Kaupasta."
+    ],
+    testerItems: [
+      "Build 38 (0.9.1) julkaistiin Google Playn suljettuun Alpha-testaukseen 3.11.2026.",
+      "Sovellus ei ole yleisessä tuotantojakelussa. Google Play -sivu näkyy hyväksytylle testaajalle oikealla Google-tilillä.",
+      "Jos vanhemman sovellusversion päivityspainike näyttää virheen, päivityksen voi avata suoraan Play Kaupasta."
+    ] },
+  { version: "0.9.1", date: "2026-11-02", status: "Suljettu testaus · Alpha · build 37", current: false,
+    summary: "Build 37 toi valitulle testiryhmälle GPS-mittauksen, monikierroksisen harjoittelun, ennätykset, analyysit, yhteiset pituusheittokilpailut ja uuden KH Disc Golf -mallikartan.",
     newItems: [
       "GPS-heitonpituusmittaus toimii jokaiselle heitolle erikseen mitattavalla lähtöpisteellä tai koko mittauskierroksen yhteisellä lähtöpisteellä. GPS-tulos on suuntaa antava arvio, jonka käyttäjä hyväksyy ennen tallennusta.",
       "Monikierroksisessa pituusheittoharjoittelussa voi valita 1–10 kiekkoa ja 1–10 mittauskierrosta sekä vaihtaa kiekkoja kierrosten välillä.",
@@ -19,9 +31,8 @@ window.KH_DISC_GOLF_RELEASES = [
       "Build 37 poistaa 12 aiemmin sisällytettyä kolmannen osapuolen ratakarttakuvaa. Ratojen metatiedot säilyvät käytettävissä ilman valmista karttakuvaa."
     ],
     testerItems: [
-      "Google Playn suljetun Alpha-testauksen julkaisu 36 (0.9.1) päivitettiin viimeksi 15.10.2026.",
+      "Build 37 (0.9.1) julkaistiin Google Playn suljettuun Alpha-testaukseen 2.11.2026; sitä edeltävä Alpha-julkaisu oli build 36.",
       "Google Play myönsi tuotantojulkaisuoikeuden 13.10.2026, mutta sovellusta ei ole julkaistu julkiselle tuotantokanavalle.",
-      "Build 37 (0.9.1) ladattiin Google Playhin ja lähetettiin tarkastukseen 2.11.2026, mutta sitä ei ole vielä vahvistettu testaajien saataville.",
       "Sovellus on edelleen suljetussa Alpha-testauksessa, joten virheitä voi löytyä. Tavoitteena on edetä hyväksyttyjen käyttökokeiden jälkeen yleiseen tuotantojulkaisuun ilman tällä hetkellä pakolliseksi suunniteltua avointa testivaihetta.",
       "Suljettua testiryhmää on tarkoitus käyttää jatkossakin suurempien ominaisuuksien ennakkotestaukseen."
     ] },
@@ -32,7 +43,7 @@ window.KH_DISC_GOLF_RELEASES = [
       "Ratakierroksen käyttöliittymää, kierroksen aloitusta ja pelaajavalintaa uudistettiin."
     ],
     improvedItems: ["Sisäinen FI/EN-käyttöopas laajennettiin kuvaamaan uusia toimintoja."],
-    testerItems: ["Build 34 valmisteltiin suljettua testausta varten 14.10.2026. Nykyinen Google Play Alpha -julkaisu on 0.9.1/build 36."] },
+    testerItems: ["Build 34 valmisteltiin suljettua testausta varten 14.10.2026. Ominaisuudet julkaistiin myöhemmin 0.9.1-sarjan Alpha-versioissa."] },
   { version: "0.8.0", date: "2026-10-03", status: "Suljettu testiversio", current: false,
     summary: "Versio 0.8.0 tuo kierroksille valinnaisen kuljetun matkan seurannan ja paikallisiin sääolosuhteisiin perustuvan sääsnapshotin. Samalla Kiekkokassia, kierroshistoriaa, tuloskortin jakamista, Korttipakan ansaintaa ja sovelluksen tietosuojaa on kehitetty edelleen.",
     newItems: [

@@ -1,6 +1,18 @@
 window.KH_DISC_GOLF_RELEASES = [
-  { version: "0.9.1", date: "2026-10-15", status: "Closed testing · Alpha · release 36", current: true,
-    summary: "The major update introduced in version 0.9.0 reached the selected test group in release 36 (0.9.1), with GPS measurement, multi-round practice, records, analysis and multiplayer distance-throwing competitions.",
+  { version: "0.9.1", date: "2026-11-03", status: "Closed testing · Alpha · build 38", current: true,
+    summary: "Build 38 improves compatibility when adding personal course-map images and fixes the app's Google Play update link.",
+    newItems: [],
+    improvedItems: [
+      "Selecting, processing and persistently storing a personal course-map image from the Android gallery is more reliable. The fix has been tested on Samsung and Huawei devices.",
+      "Check for updates now uses the HTTPS link for the production app's Google Play page. The previous link could show “No longer available” even though the app was present in Play Store."
+    ],
+    testerItems: [
+      "Build 38 (0.9.1) was released to Google Play closed Alpha testing on 3 November 2026.",
+      "The app is not on the public production track. Its Google Play page is available to an approved tester signed in with the correct Google account.",
+      "If an older app version's update button shows an error, the update can be opened directly in Play Store."
+    ] },
+  { version: "0.9.1", date: "2026-11-02", status: "Closed testing · Alpha · build 37", current: false,
+    summary: "Build 37 brought GPS measurement, multi-round practice, records, analysis, multiplayer distance-throwing competitions and the new KH Disc Golf demo map to the selected test group.",
     newItems: [
       "GPS throw-distance measurement supports either a separate start point for every throw or one shared start for the measurement round. GPS results are approximate estimates that the player approves before saving.",
       "Multi-round distance practice supports 1–10 discs and 1–10 measurement rounds, with a new disc selection available between rounds.",
@@ -19,9 +31,8 @@ window.KH_DISC_GOLF_RELEASES = [
       "Build 37 removes 12 previously bundled third-party course-map images. Course metadata remains available without a ready-made map image."
     ],
     testerItems: [
-      "Google Play closed Alpha release 36 (0.9.1) was last updated on 15 October 2026.",
+      "Build 37 (0.9.1) was released to Google Play closed Alpha testing on 2 November 2026; the preceding Alpha release was build 36.",
       "Google Play granted production release access on 13 October 2026, but the app has not been released on the public production track.",
-      "Build 37 (0.9.1) was uploaded to Google Play and submitted for review on 2 November 2026, but it has not yet been confirmed available to testers.",
       "The app remains in closed Alpha testing, so defects may be found. The goal is to proceed to a general production release after successful usage trials, with no mandatory open-testing phase currently planned.",
       "The closed test group is intended to remain in use for preview testing of major future features."
     ] },
@@ -32,7 +43,7 @@ window.KH_DISC_GOLF_RELEASES = [
       "The course-round interface, round setup and player selection were redesigned."
     ],
     improvedItems: ["The Finnish and English in-app guide was expanded to explain the new workflows."],
-    testerItems: ["Build 34 was prepared for closed testing on 14 October 2026. The current Google Play Alpha release is 0.9.1/build 36."] },
+    testerItems: ["Build 34 was prepared for closed testing on 14 October 2026. The features were later released in the 0.9.1 Alpha series."] },
   { version: "0.8.0", date: "2026-10-03", status: "Closed test release", current: false,
     summary: "Version 0.8.0 adds optional walking-distance tracking and a weather snapshot, with improvements to the Disc Bag, round history, shared scorecards and privacy information.",
     newItems: [
