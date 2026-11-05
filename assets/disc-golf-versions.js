@@ -1,14 +1,28 @@
 window.KH_DISC_GOLF_RELEASES = [
-  { version: "0.9.1", date: "2026-11-03", status: "Suljettu testaus · Alpha · build 38", current: true,
+  { version: "0.9.1", date: "2026-11-05", status: "Suljettu testaus · Alpha · build 39", current: true,
+    summary: "Build 39 parantaa toimintavarmuutta, varmuuskopiointia ja tietoturvaa. Google Play -päivitykset ja käyttäjätietojen palautus on testattu erillisissä testiympäristöissä.",
+    newItems: [],
+    improvedItems: [
+      "Varmuuskopio ottaa luotettavasti mukaan myös aivan viimeisimmät muutokset ja tallentaa oikean tietokantaversion. Palautus–vienti–palautus-ketju on testattu käyttäjätietojen säilyessä.",
+      "Poikkeavia kierrostietoja ei enää poisteta hiljaisesti varmuuskopioinnin yhteydessä, vaan tiedot säilytetään myöhempää turvallista käsittelyä varten.",
+      "Sovelluksen linkkien käsittelyä on vahvistettu virheellisten ja poikkeuksellisen pitkien linkkien varalta. Tämä vähentää linkkien aiheuttamien jumittumisten ja kaatumisten riskiä.",
+      "Android 16 / API 36 -yhteensopivuus ja Androidin 16 kilotavun muistisivukoko on testattu erillisessä Android-ympäristössä."
+    ],
+    testerItems: [
+      "Build 39 (0.9.1) julkaistiin Google Playn suljettuun Alpha-testaukseen 5.11.2026.",
+      "Normaalit Google Play -päivitykset on testattu. Hyväksytyt Alpha-testaajat asentavat ja päivittävät Playsta jaetun sovelluksen Google Playn kautta.",
+      "Sovellus ei ole yleisessä tuotantojakelussa. Google Play -sivu näkyy hyväksytylle testaajalle oikealla Google-tilillä."
+    ] },
+  { version: "0.9.1", date: "2026-11-03", status: "Suljettu testaus · Alpha · build 38", current: false,
     summary: "Build 38 parantaa omien ratakarttakuvien lisäämisen yhteensopivuutta ja korjaa sovelluksen Google Play -päivityslinkin.",
     newItems: [],
     improvedItems: [
-      "Käyttäjän oman ratakarttakuvan valintaa, käsittelyä ja pysyvää tallennusta Androidin galleriasta on parannettu. Korjaus on testattu Samsung- ja Huawei-laitteilla.",
+      "Käyttäjän oman ratakarttakuvan valintaa, käsittelyä ja pysyvää tallennusta Androidin galleriasta on parannettu. Korjaus on testattu Android-laitteilla.",
       "Tarkista päivitykset -toiminto käyttää nyt tuotantosovelluksen Google Play -sivun HTTPS-linkkiä. Aiempi linkitys saattoi näyttää virheen ”Ei enää saatavana”, vaikka sovellus löytyi Play Kaupasta."
     ],
     testerItems: [
       "Build 38 (0.9.1) julkaistiin Google Playn suljettuun Alpha-testaukseen 3.11.2026.",
-      "Samsungin TESTI-päivityksessä käyttäjän omat ratakartat sekä tii- ja korimerkinnät säilyivät päivityksen jälkeen.",
+      "Testipäivityksessä käyttäjän omat ratakartat sekä tii- ja korimerkinnät säilyivät päivityksen jälkeen.",
       "Sovellus ei ole yleisessä tuotantojakelussa. Google Play -sivu näkyy hyväksytylle testaajalle oikealla Google-tilillä.",
       "Jos vanhemman sovellusversion päivityspainike näyttää virheen, päivityksen voi avata suoraan Play Kaupasta."
     ] },

@@ -1,14 +1,28 @@
 window.KH_DISC_GOLF_RELEASES = [
-  { version: "0.9.1", date: "2026-11-03", status: "Closed testing · Alpha · build 38", current: true,
+  { version: "0.9.1", date: "2026-11-05", status: "Closed testing · Alpha · build 39", current: true,
+    summary: "Build 39 improves reliability, backup handling and security. Google Play updates and user-data restoration have been tested in separate test environments.",
+    newItems: [],
+    improvedItems: [
+      "Backups now reliably include the most recent changes and record the correct database version. The restore–export–restore chain has been tested with user data preserved.",
+      "Unexpected round records are no longer silently removed during backup. They are preserved for later safe handling.",
+      "App link handling has been hardened against malformed and unusually long links, reducing the risk of link-related freezes and crashes.",
+      "Android 16 / API 36 compatibility and Android's 16 KB memory page size have been tested in a separate Android environment."
+    ],
+    testerItems: [
+      "Build 39 (0.9.1) was released to Google Play closed Alpha testing on 5 November 2026.",
+      "Normal Google Play updates have been tested. Approved Alpha testers install and update the Play-distributed app through Google Play.",
+      "The app is not on the public production track. Its Google Play page is available to an approved tester signed in with the correct Google account."
+    ] },
+  { version: "0.9.1", date: "2026-11-03", status: "Closed testing · Alpha · build 38", current: false,
     summary: "Build 38 improves compatibility when adding personal course-map images and fixes the app's Google Play update link.",
     newItems: [],
     improvedItems: [
-      "Selecting, processing and persistently storing a personal course-map image from the Android gallery is more reliable. The fix has been tested on Samsung and Huawei devices.",
+      "Selecting, processing and persistently storing a personal course-map image from the Android gallery is more reliable. The fix has been tested on Android devices.",
       "Check for updates now uses the HTTPS link for the production app's Google Play page. The previous link could show “No longer available” even though the app was present in Play Store."
     ],
     testerItems: [
       "Build 38 (0.9.1) was released to Google Play closed Alpha testing on 3 November 2026.",
-      "In the Samsung TESTI update, the user's personal course maps and tee and basket markers remained available after the update.",
+      "In a test update, the user's personal course maps and tee and basket markers remained available after the update.",
       "The app is not on the public production track. Its Google Play page is available to an approved tester signed in with the correct Google account.",
       "If an older app version's update button shows an error, the update can be opened directly in Play Store."
     ] },
